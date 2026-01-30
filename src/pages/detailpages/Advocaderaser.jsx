@@ -1,9 +1,8 @@
-import foto from '../images/Advocaderaser.png'
-import foto1 from '../images/advo/Advo0.png'
-import foto2 from '../images/advo/Advo1.png'
-import foto3 from '../images/advo/Advo2.png'
-import foto4 from '../images/advo/Advo3.png'
-import foto5 from '../images/advo/Advo4.png'
+import foto from '../../images/Advocaderaser.png'
+import foto2 from '../../images/advo/Advo1.png'
+import foto3 from '../../images/advo/Advo2.png'
+import foto4 from '../../images/advo/Advo3.png'
+import foto5 from '../../images/advo/Advo4.png'
 
 function Advocaderaser() {
 
@@ -14,7 +13,7 @@ function Advocaderaser() {
                 src={foto} alt="foto advocaderaser"/>
 
             <article className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
-                <h2 className={"text-2xl font-bold pb-2"}>Advocaderaser</h2>
+                <h2 className={"text-2xl font-bold pb-2"}>Advocaderaser (solo)</h2>
                 <p className={"text-sm"}>Dit was een school project waar we voor het eerst een game hebben gemaakt. We
                     hebben hier excalibur
                     voor moeten gebruiken, omdat dit met Javacript werkt. Ook was dit de eerste ervaring met OOP

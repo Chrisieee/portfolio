@@ -4,7 +4,9 @@ import Layout from "./Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
 import About from "./pages/Aboutme.jsx";
-import Advocaderaser from "./pages/Advocaderaser.jsx";
+import Advocaderaser from "./pages/detailpages/Advocaderaser.jsx";
+import Signatuur from "./pages/detailpages/Signatuur.jsx";
+import Gamereviews from "./pages/detailpages/Gamereviews.jsx";
 
 function App() {
     const router = createBrowserRouter([
@@ -22,6 +24,14 @@ function App() {
                 {
                     path: "/projects/1",
                     element: <Advocaderaser/>
+                },
+                {
+                    path: "/projects/2",
+                    element: <Signatuur/>
+                },
+                {
+                    path: "/projects/3",
+                    element: <Gamereviews/>
                 },
                 {
                     path: "/about-me",

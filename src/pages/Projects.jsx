@@ -28,7 +28,7 @@ function Projects() {
                 <div className={"flex-col flex gap-2"}>
                     <Link
                         className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
-                        to={"/projects"}>Meer informatie</Link>
+                        to={"/projects/3"}>Meer informatie</Link>
                     <div className={"w-full flex gap-2"}>
                         <a className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300 flex-grow"}
                            href="https://github.com/Chrisieee/gamereviews-react" target={"_blank"}>Front-end</a>
@@ -54,7 +54,7 @@ function Projects() {
                 <div className={"flex-col flex gap-2"}>
                     <Link
                         className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
-                        to={"/projects"}>Meer informatie</Link>
+                        to={"/projects/2"}>Meer informatie</Link>
                     <a className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
                        href="https://chrisieee.github.io/signatuuropdracht-tle2/" target={"_blank"}>Live project</a>
                 </div>

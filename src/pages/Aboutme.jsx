@@ -169,6 +169,10 @@ function About() {
                             <td><i className="fa-solid fa-database"></i></td>
                             <td className={"w-8/9"}>MongoDB</td>
                         </tr>
+                        <tr>
+                            <td><i className="fa-solid fa-database"></i></td>
+                            <td className={"w-8/9"}>Mongoose</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
