@@ -1,4 +1,5 @@
 import {useLanguage} from "../context/Language.jsx";
+import pf from "../images/christa.jpg";
 
 function Home() {
     const {home} = useLanguage()
@@ -13,8 +14,8 @@ function Home() {
                 <p className={"text-4xl text-right"}><i className="fa-solid fa-quote-right"></i></p>
             </article>
 
-            <article
-                className={"shadow-lg rounded-2xl p-4 bg-[url(./images/christa.jpg)] bg-top bg-cover row-span-2"}></article>
+            <img className={"h-full w-full object-cover object-top rounded-xl col-span-1 row-span-2"} src={pf}
+                 alt="foto christa"/>
 
             <article className={"shadow-lg rounded-2xl p-4 bg-blue-300 row-span-3 flex flex-col gap-3"}>
                 <h2 className={"text-xl font-bold"}>{home.projects}</h2>

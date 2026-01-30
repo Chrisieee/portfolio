@@ -4,9 +4,9 @@ import Layout from "./Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
 import About from "./pages/Aboutme.jsx";
+import Advocaderaser from "./pages/Advocaderaser.jsx";
 
 function App() {
-
     const router = createBrowserRouter([
         {
             element: <Layout/>,
@@ -16,11 +16,15 @@ function App() {
                     element: <Home/>
                 },
                 {
-                    path: "/projecten",
+                    path: "/projects",
                     element: <Projects/>
                 },
                 {
-                    path: "/over-mij",
+                    path: "/projects/1",
+                    element: <Advocaderaser/>
+                },
+                {
+                    path: "/about-me",
                     element: <About/>
                 }
             ]
@@ -30,6 +34,7 @@ function App() {
     return (
         <RouterProvider router={router}/>
     )
+
 }
 
 export default App

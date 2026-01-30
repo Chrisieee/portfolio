@@ -1,12 +1,13 @@
 import {useLanguage} from "../context/Language.jsx";
+import pf from "../images/christa.jpg";
 
 function About() {
     const {about} = useLanguage()
 
     return (
         <section className={"mx-4 grid grid-cols-4 gap-4 h-full"}>
-            <article
-                className={"shadow-lg rounded-2xl p-4 bg-[url(./images/christa.jpg)] bg-top bg-cover row-span-3"}></article>
+            <img className={"h-full w-full object-cover object-top rounded-xl col-span-1 row-span-3"} src={pf}
+                 alt="foto christa"/>
 
             <article className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 row-span-3"}>
                 <h2 className={"text-xl font-bold"}>{about.bio}</h2>
