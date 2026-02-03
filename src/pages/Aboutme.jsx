@@ -5,11 +5,11 @@ function About() {
     const {about} = useAbout()
 
     return (
-        <section className={"mx-4 grid grid-cols-4 gap-4 h-full"}>
+        <section className={"mx-4 grid md:grid-cols-4 grid-cols-2 gap-4 h-full"}>
             <img className={"h-full w-full object-cover object-top rounded-xl col-span-1 row-span-3"} src={pf}
                  alt="foto christa"/>
 
-            <article className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 row-span-3"}>
+            <article className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-2 col-span-1 row-span-3"}>
                 <h2 className={"text-2xl font-heading"}>{about.bio}</h2>
                 <p>{about.bioInfo}</p>
                 <h3 className={"text-xl font-heading"}>{about.hobby}</h3>
@@ -19,7 +19,7 @@ function About() {
             </article>
 
             <article
-                className={"shadow-lg rounded-2xl p-4 bg-blue-500 flex flex-col gap-1 justify-between row-span-3"}>
+                className={"shadow-lg rounded-2xl p-4 bg-blue-500 flex flex-col gap-1 justify-between md:row-span-3 col-span-2 md:col-span-1"}>
                 <h2 className={"text-2xl font-heading"}>Contact</h2>
                 <a className={"p-2 rounded-xl bg-blue-300 text-center border-2 border-blue-400 hover:bg-blue-400 hover:border-blue-300"}
                    href="/ChristaPol_CV_01-2026.pdf"
@@ -38,7 +38,8 @@ function About() {
                 </div>
             </article>
 
-            <article className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-4 content-center text-center"}>
+            <article
+                className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-4 col-span-2 content-center text-center"}>
                 <h3 className={"text-3xl font-heading"}>{about.experience}</h3>
             </article>
 

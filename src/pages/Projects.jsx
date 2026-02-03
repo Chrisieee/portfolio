@@ -7,9 +7,9 @@ import discord from "../images/Discord.png";
 
 function Projects() {
     return (
-        <div className={"mx-4 grid grid-cols-3 gap-4 h-full"}>
+        <div className={"mx-4 grid lg:grid-cols-3 grid-cols-2 gap-4 h-full"}>
             <section
-                className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-3 content-center text-center"}>
+                className={"shadow-lg rounded-2xl p-4 bg-blue-400 lg:col-span-3 col-span-2 content-center text-center"}>
                 <h2 className={"text-3xl font-heading"}>Projecten</h2>
             </section>
 
@@ -18,7 +18,7 @@ function Projects() {
                 <div>
                     <h3 className={"text-3xl font-heading pb-2"}>Discord bot (fun)</h3>
                     <img className={"object-cover object-left rounded-xl w-full h-50 border-2"} src={discord}
-                         alt="foto audio api"/>
+                         alt="foto discord bot"/>
                 </div>
                 <div className={"flex justify-evenly pt-2"}>
                     <p className={"text-lg"}><i className="fa-brands fa-js text-2xl"></i> Javascript</p>

@@ -10,9 +10,9 @@ function Home() {
     const navigate = useNavigate()
 
     return (
-        <div className={"mx-4 grid grid-cols-4 gap-4 h-full"}>
+        <div className={"mx-4 grid md:grid-cols-4 grid-cols-2 gap-4 h-full"}>
             <section
-                className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 row-span-2 flex flex-col justify-center gap-2"}>
+                className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-2 col-span-1 row-span-2 flex flex-col justify-center gap-2"}>
                 <p className={"text-4xl"}><i className="fa-solid fa-quote-left"></i></p>
                 <h2 className={"text-2xl font-heading"}>{home.quote}</h2>
                 <p>{home.quoteInfo}</p>
@@ -22,7 +22,7 @@ function Home() {
             <img className={"h-full w-full object-cover object-top rounded-xl col-span-1 row-span-2"} src={pf}
                  alt="foto christa"/>
 
-            <section className={"shadow-lg rounded-2xl p-4 bg-blue-300 row-span-3 flex flex-col gap-3"}>
+            <section className={"shadow-lg rounded-2xl p-4 bg-blue-300 row-span-3 flex flex-col gap-3 justify-between"}>
                 <h2 className={"text-2xl font-heading"}>{home.projects}</h2>
                 <img onClick={() => {
                     navigate("/projects/4")
@@ -38,7 +38,7 @@ function Home() {
                      alt="foto gamereview"/>
             </section>
 
-            <section className={"shadow-lg rounded-2xl p-4 bg-blue-500 flex flex-col gap-1 justify-between"}>
+            <section className={"shadow-lg rounded-2xl p-4 bg-blue-500 flex flex-col gap-1 justify-between row-span-1"}>
                 <div>
                     <h2 className={"text-2xl font-heading"}>{home.contact1}</h2>
                     <h2 className={"text-2xl font-heading pb-2"}>{home.contact2}</h2>
@@ -57,7 +57,8 @@ function Home() {
                 </div>
             </section>
 
-            <section className={"shadow-lg  rounded-2xl p-4 bg-blue-400 col-span-2"}>
+            <section
+                className={"shadow-lg  rounded-2xl p-4 bg-blue-400 md:col-span-2 col-span-1 md:row-span-1 row-span-2"}>
                 <h2 className={"text-2xl font-heading"}>{home.bio}</h2>
                 <p>{home.bioInfo}</p>
             </section>

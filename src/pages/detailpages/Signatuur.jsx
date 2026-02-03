@@ -7,7 +7,7 @@ import foto5 from '../../images/sign/Sign4.png'
 function Signatuur() {
 
     return (
-        <section className={"mx-4 grid grid-cols-4 gap-4 h-full"}>
+        <section className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"}>
             <img
                 className={"border-1 shadow-lg h-full w-full object-cover object-left rounded-xl col-span-2 row-span-1"}
                 src={foto} alt="foto signatuur"/>
