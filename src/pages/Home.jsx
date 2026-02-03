@@ -25,16 +25,16 @@ function Home() {
             <section className={"shadow-lg rounded-2xl p-4 bg-blue-300 row-span-3 flex flex-col gap-3 justify-between"}>
                 <h2 className={"text-2xl font-heading"}>{home.projects}</h2>
                 <img onClick={() => {
-                    navigate("/projects/4")
-                }} className={"object-cover object-left rounded-xl w-full h-40 border-2"} src={discord}
+                    navigate("/projects/5")
+                }} className={"object-cover object-left rounded-xl w-full grow-1 border-2"} src={discord}
                      alt="foto discord bot"/>
                 <img onClick={() => {
                     navigate("/projects/4")
-                }} className={"object-cover object-top rounded-xl w-full h-40 border-2"} src={audio}
+                }} className={"object-cover object-top rounded-xl w-full grow-1 border-2"} src={audio}
                      alt="foto audio api"/>
                 <img onClick={() => {
                     navigate("/projects/3")
-                }} className={"object-cover object-center rounded-xl w-full h-40 border-2"} src={gamereview}
+                }} className={"object-cover object-center rounded-xl w-full grow-1 border-2"} src={gamereview}
                      alt="foto gamereview"/>
             </section>
 
@@ -43,7 +43,7 @@ function Home() {
                     <h2 className={"text-2xl font-heading"}>{home.contact1}</h2>
                     <h2 className={"text-2xl font-heading pb-2"}>{home.contact2}</h2>
                 </div>
-                <div className={"flex gap-5 justify-center"}>
+                <div className={"flex flex-col md:flex-row gap-5 justify-center items-center"}>
                     <a className={"text-5xl text-blue-300 hover:text-blue-400"}
                        href="mailto:christa_pol1@hotmail.com"><i
                         className="fa-solid fa-envelope"></i></a>

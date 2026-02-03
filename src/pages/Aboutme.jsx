@@ -6,10 +6,11 @@ function About() {
 
     return (
         <section className={"mx-4 grid md:grid-cols-4 grid-cols-2 gap-4 h-full"}>
-            <img className={"h-full w-full object-cover object-top rounded-xl col-span-1 row-span-3"} src={pf}
-                 alt="foto christa"/>
+            <img
+                className={"h-56 md:h-full w-full object-cover object-top rounded-xl col-span-2 md:col-span-1 row-span-1 md:row-span-3"}
+                src={pf} alt="foto christa"/>
 
-            <article className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-2 col-span-1 row-span-3"}>
+            <article className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-2 col-span-2 row-span-3"}>
                 <h2 className={"text-2xl font-heading"}>{about.bio}</h2>
                 <p>{about.bioInfo}</p>
                 <h3 className={"text-xl font-heading"}>{about.hobby}</h3>

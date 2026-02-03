@@ -16,14 +16,20 @@ function Layout() {
                         nav ? await setNav(false) : await setNav(true)
                     }} className="fa-solid fa-bars text-3xl"></i>
                 </div>
-                <Link to={"/"}><h1 className={"text-4xl hover:text-blue-200 font-heading"}>Christa</h1></Link>
+                <Link onClick={async () => {
+                    nav ? await setNav(false) : await setNav(true)
+                }} to={"/"}><h1 className={"text-4xl hover:text-blue-200 font-heading"}>Christa</h1></Link>
                 <div className={"content-center"}>
                     <div className={nav ? "block md:block" : "hidden md:block"}>
                         <nav
                             className={"flex flex-col md:flex-row md:justify-between gap-1 md:gap-5"}>
-                            <Link className={"text-2xl hover:text-blue-200"}
+                            <Link onClick={async () => {
+                                nav ? await setNav(false) : await setNav(true)
+                            }} className={"text-2xl hover:text-blue-200"}
                                   to={"/projects"}>{language === "NL" ? "Projecten" : "Projects"}</Link>
-                            <Link className={"text-2xl hover:text-blue-200"}
+                            <Link onClick={async () => {
+                                nav ? await setNav(false) : await setNav(true)
+                            }} className={"text-2xl hover:text-blue-200"}
                                   to={"/about-me"}>{language === "NL" ? "Over mij" : "About me"}</Link>
                             <button className={"text-2xl hover:text-blue-200"}
                                     onClick={() => languageChange()}>{language === "NL" ? "EN" : "NL"}</button>

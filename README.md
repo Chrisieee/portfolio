@@ -4,12 +4,6 @@
 
 ### Los van website:
 
-- Readme toevoegen aan projecten
-    - Discord bot
-    - Audio API
-    - Signatuur
-    - Advocaderaser?
-
 ### Moet voor website:
 
 #### Informatie:
@@ -23,7 +17,6 @@
 
 #### Design & Responsiveness:
 
-- Mobile ready maken
 - Kleur aanpassen
 
 ### Leuk voor website:

@@ -7,9 +7,9 @@ import discord from "../images/Discord.png";
 
 function Projects() {
     return (
-        <div className={"mx-4 grid lg:grid-cols-3 grid-cols-2 gap-4 h-full"}>
+        <div className={"mx-4 grid md:grid-cols-3 grid-cols-1 gap-4 h-full"}>
             <section
-                className={"shadow-lg rounded-2xl p-4 bg-blue-400 lg:col-span-3 col-span-2 content-center text-center"}>
+                className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-3 col-span-1 content-center text-center"}>
                 <h2 className={"text-3xl font-heading"}>Projecten</h2>
             </section>
 
