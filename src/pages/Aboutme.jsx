@@ -1,8 +1,8 @@
-import {useLanguage} from "../context/Language.jsx";
 import pf from "../images/christa.jpg";
+import {useAbout} from "../context/AboutContext.jsx";
 
 function About() {
-    const {about} = useLanguage()
+    const {about} = useAbout()
 
     return (
         <section className={"mx-4 grid grid-cols-4 gap-4 h-full"}>
@@ -10,17 +10,17 @@ function About() {
                  alt="foto christa"/>
 
             <article className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 row-span-3"}>
-                <h2 className={"text-xl font-bold"}>{about.bio}</h2>
+                <h2 className={"text-2xl font-heading"}>{about.bio}</h2>
                 <p>{about.bioInfo}</p>
-                <h3 className={"text-lg font-bold"}>{about.hobby}</h3>
+                <h3 className={"text-xl font-heading"}>{about.hobby}</h3>
                 <p>{about.hobbyInfo}</p>
-                <h3 className={"text-lg font-bold"}>{about.stage}</h3>
+                <h3 className={"text-xl font-heading"}>{about.stage}</h3>
                 <p>{about.stageInfo}</p>
             </article>
 
             <article
                 className={"shadow-lg rounded-2xl p-4 bg-blue-500 flex flex-col gap-1 justify-between row-span-3"}>
-                <h2 className={"text-xl font-bold"}>Contact</h2>
+                <h2 className={"text-2xl font-heading"}>Contact</h2>
                 <a className={"p-2 rounded-xl bg-blue-300 text-center border-2 border-blue-400 hover:bg-blue-400 hover:border-blue-300"}
                    href="/ChristaPol_CV_01-2026.pdf"
                    download={"ChristaPol_CV_01-2026.pdf"}>Download
@@ -39,11 +39,11 @@ function About() {
             </article>
 
             <article className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-4 content-center text-center"}>
-                <h3 className={"text-2xl font-bold"}>{about.experience}</h3>
+                <h3 className={"text-3xl font-heading"}>{about.experience}</h3>
             </article>
 
             <article className={"shadow-lg rounded-2xl p-4 bg-blue-300 flex flex-col gap-3 row-span-2"}>
-                <h3 className={"text-lg font-bold"}>Skills:</h3>
+                <h3 className={"text-xl font-heading"}>Skills:</h3>
                 <p>- Web design</p>
                 <p>- Web development</p>
                 <p>- Media design</p>
@@ -51,7 +51,7 @@ function About() {
             </article>
             <article className={"shadow-lg rounded-2xl p-4 bg-blue-300 flex flex-col gap-5 row-span-2"}>
                 <div>
-                    <h3 className={"text-lg font-bold pb-2"}>Design:</h3>
+                    <h3 className={"text-xl font-heading pb-2"}>Design:</h3>
                     <table className={"w-full"}>
                         <tbody>
                         <tr>
@@ -95,7 +95,7 @@ function About() {
                 </div>
             </article>
             <article className={"shadow-lg rounded-2xl p-4 bg-blue-300 flex flex-col gap-2 row-span-2"}>
-                <h3 className={"text-lg font-bold"}>Front-end:</h3>
+                <h3 className={"text-xl font-heading"}>Front-end:</h3>
                 <table className={"w-full"}>
                     <tbody>
                     <tr>
@@ -135,7 +135,7 @@ function About() {
             </article>
             <article className={"shadow-lg rounded-2xl p-4 bg-blue-300 flex flex-col gap-5 row-span-2"}>
                 <div>
-                    <h3 className={"text-lg font-bold pb-2"}>Back-end:</h3>
+                    <h3 className={"text-xl font-heading pb-2"}>Back-end:</h3>
                     <table className={"w-full"}>
                         <tbody>
                         <tr>
@@ -154,7 +154,7 @@ function About() {
                     </table>
                 </div>
                 <div>
-                    <h3 className={"text-lg font-bold pb-2"}>Database:</h3>
+                    <h3 className={"text-xl font-heading pb-2"}>Database:</h3>
                     <table className={"w-full"}>
                         <tbody>
                         <tr>
