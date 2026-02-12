@@ -3,9 +3,3 @@
 
 @config "../tailwind.config.js";
 @import "tailwindcss";
-
-@layer utilities {
-    .debug-font {
-        font-family: "Spicy Rice", sans-serif;
-    }
-}

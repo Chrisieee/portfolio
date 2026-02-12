@@ -8,7 +8,6 @@
 
 #### Informatie:
 
-- Vertaling projects page
 - Vertaling details advocaderaser
 - Vertaling details signatuur
 - Vertaling details gamereviews
@@ -17,7 +16,7 @@
 
 #### Design & Responsiveness:
 
-- Kleur aanpassen
+- Kleur aanpassen?
 
 ### Leuk voor website:
 

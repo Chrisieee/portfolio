@@ -6,16 +6,19 @@ import {LanguageProvider} from "./context/Language.jsx";
 import {HashRouter} from "react-router";
 import {AboutProvider} from "./context/AboutContext.jsx";
 import {HomeProvider} from "./context/HomeContext.jsx";
+import {ProjectsProvider} from "./context/ProjectsContext.jsx";
 
 createRoot(document.getElementById('root')).render(
     <HashRouter>
         <HomeProvider>
             <AboutProvider>
-                <LanguageProvider>
-                    <StrictMode>
-                        <App/>
-                    </StrictMode>
-                </LanguageProvider>
+                <ProjectsProvider>
+                    <LanguageProvider>
+                        <StrictMode>
+                            <App/>
+                        </StrictMode>
+                    </LanguageProvider>
+                </ProjectsProvider>
             </AboutProvider>
         </HomeProvider>
     </HashRouter>
