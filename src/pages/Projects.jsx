@@ -16,20 +16,21 @@ function Projects() {
 
     return (
         <motion.div className={"mx-4 grid md:grid-cols-3 grid-cols-1 gap-4 h-full"}
-                    variants={containerVariants} initial="hidden" animate="show">
+                    variants={containerVariants} initial="hidden" animate="show" layout="position">
             <motion.section
                 variants={itemVariants}
                 className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-3 col-span-1 content-center text-center"}>
-                <h2 className={"text-3xl font-heading"}>{project.title}</h2>
+                <h2 className={"text-3xl font-heading"}>{project.title} fun</h2>
             </motion.section>
 
             <motion.section
-                variants={itemVariants}
+                variants={itemVariants} layoutId="project-5" layout="position"
                 className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
                 <div>
-                    <h3 className={"text-3xl font-heading pb-2"}>Discord bot (fun)</h3>
-                    <img className={"object-cover object-left rounded-xl w-full h-50 border-2"} src={discord}
-                         alt="foto discord bot"/>
+                    <h3 className={"text-3xl font-heading pb-2"}>Discord bot (solo)</h3>
+                    <motion.img layoutId="project-5-image"
+                                className={"object-cover object-left rounded-xl w-full h-50 border-2"} src={discord}
+                                alt="foto discord bot"/>
                 </div>
                 <div className={"flex justify-evenly pt-2"}>
                     <p className={"text-lg"}><i className="fa-brands fa-js text-2xl"></i> Javascript</p>
@@ -45,13 +46,13 @@ function Projects() {
                 </div>
             </motion.section>
 
-            <motion.section
-                variants={itemVariants}
-                className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
+            <motion.section layoutId="project-4" layout="position" variants={itemVariants}
+                            className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
                 <div>
-                    <h3 className={"text-3xl font-heading pb-2"}>Audio API (fun)</h3>
-                    <img className={"object-cover object-top rounded-xl w-full h-50 border-2"} src={audio}
-                         alt="foto audio api"/>
+                    <h3 className={"text-3xl font-heading pb-2"}>Audio API (solo)</h3>
+                    <motion.img layoutId="project-4-image"
+                                className={"object-cover object-top rounded-xl w-full h-50 border-2"} src={audio}
+                                alt="foto audio api"/>
                 </div>
                 <div className={"flex justify-evenly pt-2"}>
                     <p className={"text-lg"}><i className="fa-brands fa-js text-2xl"></i> Javascript</p>
@@ -70,11 +71,18 @@ function Projects() {
 
             <motion.section
                 variants={itemVariants}
+                className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-3 col-span-1 content-center text-center"}>
+                <h2 className={"text-3xl font-heading"}>{project.title} school</h2>
+            </motion.section>
+
+            <motion.section
+                variants={itemVariants} layoutId="project-3" layout="position"
                 className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
                 <div>
-                    <h3 className={"text-3xl font-heading pb-2"}>Gamereviews (school)</h3>
-                    <img className={"object-cover object-center rounded-xl w-full h-50 border-2"} src={gamereview}
-                         alt="foto gamereview"/>
+                    <h3 className={"text-3xl font-heading pb-2"}>Gamereviews (solo)</h3>
+                    <motion.img layoutId="project-3-image"
+                                className={"object-cover object-center rounded-xl w-full h-50 border-2"}
+                                src={gamereview} alt="foto gamereview"/>
                 </div>
                 <div className={"flex justify-evenly pt-2"}>
                     <p className={"text-lg"}><i className="fa-brands fa-react text-2xl"></i> React</p>
@@ -97,13 +105,13 @@ function Projects() {
                 </div>
             </motion.section>
 
-            <motion.section
-                variants={itemVariants}
-                className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
+            <motion.section layoutId="project-2" variants={itemVariants} layout="position"
+                            className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
                 <div>
                     <h3 className={"text-3xl font-heading pb-2"}>{project.title2}</h3>
-                    <img className={"object-cover object-left rounded-xl w-full h-50 border-2"} src={signatuur}
-                         alt="foto signatuur"/>
+                    <motion.img layoutId="project-2-image"
+                                className={"object-cover object-left rounded-xl w-full h-50 border-2"} src={signatuur}
+                                alt="foto signatuur"/>
                 </div>
                 <div className={"flex justify-evenly pt-2"}>
                     <p className={"text-lg"}><i className="fa-brands fa-js text-2xl"></i> Javascript</p>
@@ -120,13 +128,14 @@ function Projects() {
                 </div>
             </motion.section>
 
-            <motion.section
-                variants={itemVariants}
-                className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
+            <motion.section layoutId="project-1" variants={itemVariants} layout="position"
+                            className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
                 <div>
-                    <h3 className={"text-3xl font-heading pb-2"}>Advocaderaser (school)</h3>
-                    <img className={"object-cover object-left rounded-xl w-full h-50 border-2"} src={advocaderaser}
-                         alt="foto advocaderaser"/>
+                    <h3 className={"text-3xl font-heading pb-2"}>Advocaderaser (solo)</h3>
+                    <motion.img layoutId="project-1-image"
+                                className={"object-cover object-left rounded-xl w-full h-50 border-2"}
+                                src={advocaderaser}
+                                alt="foto advocaderaser"/>
                 </div>
                 <div className={"flex justify-evenly pt-2"}>
                     <p className={"text-lg"}><i className="fa-brands fa-js text-2xl"></i> Javascript</p>

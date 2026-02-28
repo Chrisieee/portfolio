@@ -6,9 +6,10 @@ function Discordbot() {
     const {containerVariants, itemVariants} = useAnimate()
 
     return (
-        <motion.div className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"} variants={containerVariants}
-                    initial="hidden" animate="show">
-            <motion.img variants={itemVariants}
+        <motion.div layoutId="project-5" className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"}
+                    variants={containerVariants} initial="hidden" animate="show" layout="position" exit={{opacity: 0}}
+                    transition={{duration: 0.2}}>
+            <motion.img variants={itemVariants} layoutId="project-5-image"
                         className={"border-1 shadow-lg h-full w-full object-cover object-left rounded-xl col-span-2 row-span-1"}
                         src={foto} alt="foto advocaderaser"/>
 
@@ -16,10 +17,13 @@ function Discordbot() {
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
                 <h2 className={"text-3xl font-heading pb-2"}>Discord bot (solo)</h2>
                 <p className={"text-sm"}>Dit is een Work in Progress project. Ik ben een eigen discord bot aan het
-                    bouwen, omdat ik een beetje gek word van alle verschillende bots die ik in mijn server heb. Hierom
+                    bouwen, omdat ik een beetje gek word van alle verschillende bots die ik in mijn server heb.
+                    Hierom
                     ben ik bezig met een all in one discord te bouwen.</p>
-                <p className={"text-sm pt-2"}>Ik ben begonnen met een simpele melding als ik live ben op mijn kanaal.
-                    Dit heb ik gedaan met de Twitch API, omdat je daarin request kan doen naar de server om te checken
+                <p className={"text-sm pt-2"}>Ik ben begonnen met een simpele melding als ik live ben op mijn
+                    kanaal.
+                    Dit heb ik gedaan met de Twitch API, omdat je daarin request kan doen naar de server om te
+                    checken
                     of een kanaal live is. Daarna ben ik gaan spelen om deze melding met een embedded message te
                     maken.</p>
             </motion.article>

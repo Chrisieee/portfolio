@@ -14,9 +14,11 @@ function Signatuur() {
     const {containerVariants, itemVariants} = useAnimate()
 
     return (
-        <motion.section className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"} variants={containerVariants}
-                        initial="hidden" animate="show">
-            <motion.img variants={itemVariants}
+        <motion.section layoutId="project-2" className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"}
+                        variants={containerVariants} initial="hidden" animate="show" layout="position"
+                        exit={{opacity: 0}}
+                        transition={{duration: 0.2}}>
+            <motion.img layoutId="project-2-image" variants={itemVariants}
                         className={"border-1 shadow-lg h-full w-full object-cover object-left rounded-xl col-span-2 row-span-1"}
                         src={foto} alt="foto signatuur"/>
 

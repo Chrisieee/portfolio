@@ -10,9 +10,10 @@ function Gamereviews() {
     const {containerVariants, itemVariants} = useAnimate()
 
     return (
-        <motion.div className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"} variants={containerVariants}
-                    initial="hidden" animate="show">
-            <motion.img variants={itemVariants}
+        <motion.div layoutId="project-3" className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"}
+                    variants={containerVariants} initial="hidden" animate="show" layout="position" exit={{opacity: 0}}
+                    transition={{duration: 0.2}}>
+            <motion.img layoutId="project-3-image" variants={itemVariants}
                         className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-2 row-span-1"}
                         src={foto} alt="foto advocaderaser"/>
 

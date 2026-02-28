@@ -14,9 +14,11 @@ function Advocaderaser() {
     const {containerVariants, itemVariants} = useAnimate()
 
     return (
-        <motion.div className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"} variants={containerVariants}
+        <motion.div layoutId="project-1" className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"}
+                    variants={containerVariants} layout="position" exit={{opacity: 0}}
+                    transition={{duration: 0.2}}
                     initial="hidden" animate="show">
-            <motion.img variants={itemVariants}
+            <motion.img layoutId="project-1-image" variants={itemVariants}
                         className={"border-1 shadow-lg h-full w-full object-cover object-left rounded-xl col-span-2 row-span-1"}
                         src={foto} alt="foto advocaderaser"/>
 

@@ -16,9 +16,8 @@ function Home() {
         <motion.div
             className="mx-4 grid md:grid-cols-4 grid-cols-2 gap-4 h-full"
             variants={containerVariants} initial="hidden" animate="show">
-            <motion.section
-                variants={itemVariants}
-                className="shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-2 col-span-1 row-span-2 flex flex-col justify-center gap-2">
+            <motion.section variants={itemVariants}
+                            className=" shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-2 col-span-1 row-span-2 flex flex-col justify-center gap-2">
                 <p className={"text-4xl"}><i className="fa-solid fa-quote-left"></i></p>
                 <h2 className={"text-2xl font-heading"}>{home.quote}</h2>
                 <p>{home.quoteInfo}</p>

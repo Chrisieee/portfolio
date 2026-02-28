@@ -21,5 +21,3 @@ Dit is de repo voor mijn developer portfolio.
 - Kleur aanpassen?
 
 ### Leuk voor website:
-
-- Animatie als je op een onderdeel klikt dat hij dan groter wordt tot hij hele pagina vult.

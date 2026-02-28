@@ -16,16 +16,19 @@ export function AnimateProvider({children}) {
     const itemVariants = {
         hidden: {
             opacity: 0,
-            y: 40,
-            scale: 0.98
+            x: 25,
+            scale: 0.9,
+            filter: "blur(2px)"
         },
         show: {
             opacity: 1,
-            y: 0,
+            x: 0,
             scale: 1,
+            filter: "blur(0px)",
             transition: {
-                duration: 0.3,
-                ease: "easeOut"
+                type: "spring",
+                stiffness: 120,
+                damping: 14
             }
         }
     };
