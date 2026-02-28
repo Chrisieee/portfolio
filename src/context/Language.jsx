@@ -9,7 +9,14 @@ export function LanguageProvider({children}) {
     const [language, setLanguage] = useState("NL")
     const {homeNL, homeEN, setHome} = useHome()
     const {aboutNL, aboutEN, setAbout} = useAbout()
-    const {projectNL, projectEN, setProject, advoNL, advoEN, setAdvo, signNL, signEN, setSign} = useProjects()
+    const {
+        projectNL, projectEN, setProject,
+        advoNL, advoEN, setAdvo,
+        signNL, signEN, setSign,
+        reviewNL, reviewEN, setReview,
+        audioNL, audioEN, setAudio,
+        botNL, botEN, setBot
+    } = useProjects()
 
     function languageChange() {
         if (language === "NL") {
@@ -19,6 +26,9 @@ export function LanguageProvider({children}) {
             setProject(projectEN)
             setAdvo(advoEN)
             setSign(signEN)
+            setReview(reviewEN)
+            setAudio(audioEN)
+            setBot(botEN)
         } else {
             setLanguage("NL")
             setHome(homeNL)
@@ -26,6 +36,9 @@ export function LanguageProvider({children}) {
             setProject(projectNL)
             setAdvo(advoNL)
             setSign(signNL)
+            setReview(reviewNL)
+            setAudio(audioNL)
+            setBot(botNL)
         }
     }
 

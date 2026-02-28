@@ -42,15 +42,49 @@ export function ProjectsProvider({children}) {
     }
     const signEN = {
         details1: "I needed to make something that show the grow I made in the last semester. We were free to choose our own methode to show this and I chose to make a game for this, because I thought that would be a fun challenge. And because I had experience in Excalibur I chose to make it with that.",
-        details2: "",
+        details2: "If I look back om this project I am kinda happy but I could have done better. I am happy I finished it and that it is wat I wanted to make. But I would have wanted to make the levels more challenging and fun. I wanted to add a new mechanic in the second world to make it more fun.",
     }
     const [sign, setSign] = useState(signNL)
+
+    const reviewNL = {
+        details1: "Dit was een full stack project op school. We moesten de back-end schrijven met Express met een MongoDB database. De front-end is gemaakt met React.",
+        details2: "Ik heb best wel wat dingen gedaan die ik nog nooit gedaan heb. Zo had ik nog nooit met Express JS, MongoBD en mongoose gewerkt. Ook was React nieuw voor mij. Daarnaast ben ik de uitdaging aangegaan om veel extra onderdelen toe te voegen. Denk aan pagination, filteren en het werken met relaties in de database.",
+    }
+    const reviewEN = {
+        details1: "This was a full stack project for school. We needed to make the back-end with Express with a MongoDB database. The front-end is made with React.",
+        details2: "With this project I did a lot of things I never tried. For example I had never worked with Express JS, MongoDB or mongoose. React was also new for me. I also challenged myself to add a lot of extra elements than were needed. Think about pagination, filtering and working with relationships in the database.",
+    }
+    const [review, setReview] = useState(reviewNL)
+
+    const audioNL = {
+        details1: "Dit is een project wat ik heb gedaan, omdat het me leuk leek om iets te maken wat audio visueel maakt. Hiervoor ben ik aan de slag gegaan met de Audio API. Voor de styling wou ik eerst met normaal CSS werken, maar uiteindelijk besloot ik het toch met tailwind te doen. Dit omdat ik merk dat ik nu ik tailwind wat beter begrijp ik hier sneller mee werk.",
+        details2: "Ik heb de keuze gemaakt om twee keer de cirkel naast elkaar te zetten, omdat het me leuk leek om te spelen met het spiegelen van de animatie. Bij de rechter heb ik ook wat gespeeld met een soort glitch effect toe te voegen als er een grote bass is. Dit geeft best wel een cool effect.",
+    }
+    const audioEN = {
+        details1: "I did this project, because I thought it would be fun to make audio into something visual. I used the Audio API for this. For the styling I wanted to use normal CSS but I choose to use tailwind in the end. This because I am noticing I am working faster with tailwind now I understand it better.",
+        details2: "I made the choose to put the circle twice next to each other, because I thought it would be fun to play with the mirroring of the animation. On the right one I also played with adding a sort of glitch effect when there is a bass. I think this gives a cool effect.",
+    }
+    const [audio, setAudio] = useState(audioNL)
+
+    const botNL = {
+        details1: "Dit is een Work in Progress project. Ik ben een eigen discord bot aan het bouwen, omdat ik een beetje gek word van alle verschillende bots die ik in mijn server heb. Hierom ben ik bezig met een all in one discord bot te bouwen.",
+        details2: "Ik ben begonnen met een simpele melding als ik live ben op mijn kanaal. Dit heb ik gedaan met de Twitch API, omdat je daarin request kan doen naar de server om te checken of een kanaal live is. Daarna ben ik gaan spelen om deze melding met een embedded message te maken.",
+    }
+    const botEN = {
+        details1: "This project is still a Work in Progress. I am working on making my own discord bot, because I am annoyed at al the different bots I have in my server. This is why I am working on making a all in one discord bot.",
+        details2: "I started with a simple alert for when I am live on my channel. I did this with the Twitch API, because you can doe request in there to check if the channel is live. After this worked I started playing with a embedded message.",
+    }
+    const [bot, setBot] = useState(botNL)
+
 
     return (
         <ProjectsContext.Provider value={{
             projectNL, projectEN, project, setProject,
             advoNL, advoEN, advo, setAdvo,
             signNL, signEN, sign, setSign,
+            reviewNL, reviewEN, review, setReview,
+            audioNL, audioEN, audio, setAudio,
+            botNL, botEN, bot, setBot,
         }}>
             {children}
         </ProjectsContext.Provider>

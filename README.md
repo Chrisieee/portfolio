@@ -7,17 +7,20 @@ Dit is de repo voor mijn developer portfolio.
 
 ### Los van website:
 
+- ?
+
 ### Moet voor website:
+
+- ?
 
 #### Informatie:
 
-- Vertaling details signatuur
-- Vertaling details gamereviews
-- Vertaling details audio api
-- Vertaling details discord bot
+- ?
 
 #### Design & Responsiveness:
 
 - Kleur aanpassen?
 
 ### Leuk voor website:
+
+- ?
