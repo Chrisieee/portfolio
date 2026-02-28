@@ -9,6 +9,7 @@ import Signatuur from "./pages/detailpages/Signatuur.jsx";
 import Gamereviews from "./pages/detailpages/Gamereviews.jsx";
 import Audio from "./pages/detailpages/Audio.jsx";
 import Discordbot from "./pages/detailpages/Discordbot.jsx";
+import Error from "./pages/Error.jsx";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/projects/4" element={<Audio/>}/>
                     <Route path="/projects/5" element={<Discordbot/>}/>
                     <Route path="/about-me" element={<About/>}/>
+                    <Route path="*" element={<Error/>}/>
                 </Route>
             </Routes>
         </>

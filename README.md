@@ -11,7 +11,6 @@ Dit is de repo voor mijn developer portfolio.
 
 #### Informatie:
 
-- Vertaling details advocaderaser
 - Vertaling details signatuur
 - Vertaling details gamereviews
 - Vertaling details audio api

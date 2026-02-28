@@ -7,6 +7,7 @@ import {HashRouter} from "react-router";
 import {AboutProvider} from "./context/AboutContext.jsx";
 import {HomeProvider} from "./context/HomeContext.jsx";
 import {ProjectsProvider} from "./context/ProjectsContext.jsx";
+import {AnimateProvider} from "./context/AnimationContext.jsx";
 
 createRoot(document.getElementById('root')).render(
     <HashRouter>
@@ -14,9 +15,11 @@ createRoot(document.getElementById('root')).render(
             <AboutProvider>
                 <ProjectsProvider>
                     <LanguageProvider>
-                        <StrictMode>
-                            <App/>
-                        </StrictMode>
+                        <AnimateProvider>
+                            <StrictMode>
+                                <App/>
+                            </StrictMode>
+                        </AnimateProvider>
                     </LanguageProvider>
                 </ProjectsProvider>
             </AboutProvider>

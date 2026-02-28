@@ -6,19 +6,25 @@ import audio from "../images/Audio.png";
 import discord from "../images/Discord.png";
 import {useProjects} from "../context/ProjectsContext.jsx";
 import {useLanguage} from "../context/Language.jsx";
+import {useAnimate} from "../context/AnimationContext.jsx";
+import {motion} from "framer-motion";
 
 function Projects() {
     const {project} = useProjects()
     const {language} = useLanguage()
+    const {containerVariants, itemVariants} = useAnimate()
 
     return (
-        <div className={"mx-4 grid md:grid-cols-3 grid-cols-1 gap-4 h-full"}>
-            <section
+        <motion.div className={"mx-4 grid md:grid-cols-3 grid-cols-1 gap-4 h-full"}
+                    variants={containerVariants} initial="hidden" animate="show">
+            <motion.section
+                variants={itemVariants}
                 className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-3 col-span-1 content-center text-center"}>
                 <h2 className={"text-3xl font-heading"}>{project.title}</h2>
-            </section>
+            </motion.section>
 
-            <section
+            <motion.section
+                variants={itemVariants}
                 className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
                 <div>
                     <h3 className={"text-3xl font-heading pb-2"}>Discord bot (fun)</h3>
@@ -37,9 +43,10 @@ function Projects() {
                        href="https://github.com/Chrisieee/Hulpie" target={"_blank"}><i
                         className="fa-brands fa-github"></i> Github</a>
                 </div>
-            </section>
+            </motion.section>
 
-            <section
+            <motion.section
+                variants={itemVariants}
                 className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
                 <div>
                     <h3 className={"text-3xl font-heading pb-2"}>Audio API (fun)</h3>
@@ -59,9 +66,10 @@ function Projects() {
                        href="https://chrisieee.github.io/Audio-visual-experience/" target={"_blank"}><i
                         className="fa-solid fa-circle text-red-500"></i> Live project</a>
                 </div>
-            </section>
+            </motion.section>
 
-            <section
+            <motion.section
+                variants={itemVariants}
                 className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
                 <div>
                     <h3 className={"text-3xl font-heading pb-2"}>Gamereviews (school)</h3>
@@ -87,9 +95,10 @@ function Projects() {
                             className="fa-brands fa-github"></i> Back-end</a>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
-            <section
+            <motion.section
+                variants={itemVariants}
                 className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
                 <div>
                     <h3 className={"text-3xl font-heading pb-2"}>{project.title2}</h3>
@@ -109,9 +118,10 @@ function Projects() {
                        href="https://chrisieee.github.io/signatuuropdracht-tle2/" target={"_blank"}><i
                         className="fa-solid fa-circle text-red-500"></i> Live project</a>
                 </div>
-            </section>
+            </motion.section>
 
-            <section
+            <motion.section
+                variants={itemVariants}
                 className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
                 <div>
                     <h3 className={"text-3xl font-heading pb-2"}>Advocaderaser (school)</h3>
@@ -131,8 +141,8 @@ function Projects() {
                        href="https://chrisieee.github.io/Advocaderaser/" target={"_blank"}><i
                         className="fa-solid fa-circle text-red-500"></i> Live project</a>
                 </div>
-            </section>
-        </div>
+            </motion.section>
+        </motion.div>
     )
 }
 
