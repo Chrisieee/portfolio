@@ -8,11 +8,13 @@ import {useProjects} from "../context/ProjectsContext.jsx";
 import {useLanguage} from "../context/Language.jsx";
 import {useAnimate} from "../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
+import {useStyle} from "../context/StylingContext.jsx";
 
 function Projects() {
     const {project} = useProjects()
     const {language} = useLanguage()
     const {containerVariants, itemVariants} = useAnimate()
+    const {button, button2} = useStyle()
 
     return (
         <motion.div className={"mx-4 grid md:grid-cols-3 grid-cols-1 gap-4 h-full"}
@@ -38,9 +40,9 @@ function Projects() {
                 <p>{project.project5}</p>
                 <div className={"flex-col flex gap-2"}>
                     <Link
-                        className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
+                        className={button}
                         to={"/projects/5"}>{language === "NL" ? "Meer informatie" : "More information"}</Link>
-                    <a className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300 flex-grow"}
+                    <a className={button}
                        href="https://github.com/Chrisieee/Hulpie" target={"_blank"}><i
                         className="fa-brands fa-github"></i> Github</a>
                 </div>
@@ -61,9 +63,9 @@ function Projects() {
                 <p>{project.project4}</p>
                 <div className={"flex-col flex gap-2"}>
                     <Link
-                        className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
+                        className={button}
                         to={"/projects/4"}>{language === "NL" ? "Meer informatie" : "More information"}</Link>
-                    <a className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
+                    <a className={button}
                        href="https://chrisieee.github.io/Audio-visual-experience/" target={"_blank"}><i
                         className="fa-solid fa-circle text-red-500"></i> Live project</a>
                 </div>
@@ -92,13 +94,13 @@ function Projects() {
                 <p>{project.project3}</p>
                 <div className={"flex-col flex gap-2"}>
                     <Link
-                        className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
+                        className={button}
                         to={"/projects/3"}>{language === "NL" ? "Meer informatie" : "More information"}</Link>
                     <div className={"w-full flex gap-2"}>
-                        <a className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300 flex-grow"}
+                        <a className={button2}
                            href="https://github.com/Chrisieee/gamereviews-react" target={"_blank"}><i
                             className="fa-brands fa-github"></i> Front-end</a>
-                        <a className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300 flex-grow"}
+                        <a className={button2}
                            href="https://github.com/Chrisieee/gamereviews-express" target={"_blank"}><i
                             className="fa-brands fa-github"></i> Back-end</a>
                     </div>
@@ -120,9 +122,9 @@ function Projects() {
                 <p>{project.project2}</p>
                 <div className={"flex-col flex gap-2"}>
                     <Link
-                        className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
+                        className={button}
                         to={"/projects/2"}>{language === "NL" ? "Meer informatie" : "More information"}</Link>
-                    <a className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
+                    <a className={button}
                        href="https://chrisieee.github.io/signatuuropdracht-tle2/" target={"_blank"}><i
                         className="fa-solid fa-circle text-red-500"></i> Live project</a>
                 </div>
@@ -144,9 +146,9 @@ function Projects() {
                 <p>{project.project1}</p>
                 <div className={"flex-col flex gap-2"}>
                     <Link
-                        className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
+                        className={button}
                         to={"/projects/1"}>{language === "NL" ? "Meer informatie" : "More information"}</Link>
-                    <a className={"p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
+                    <a className={button}
                        href="https://chrisieee.github.io/Advocaderaser/" target={"_blank"}><i
                         className="fa-solid fa-circle text-red-500"></i> Live project</a>
                 </div>

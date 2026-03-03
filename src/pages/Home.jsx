@@ -33,15 +33,17 @@ function Home() {
                 <h2 className={"text-2xl font-heading"}>{home.projects}</h2>
                 <img onClick={() => {
                     navigate("/projects/5")
-                }} className={"object-cover object-left rounded-xl w-full grow-1 border-2"} src={discord}
+                }} className={"object-cover object-left rounded-xl w-full grow-1 border-2 hover:scale-105"}
+                     src={discord}
                      alt="foto discord bot"/>
                 <img onClick={() => {
                     navigate("/projects/4")
-                }} className={"object-cover object-top rounded-xl w-full grow-1 border-2"} src={audio}
+                }} className={"object-cover object-top rounded-xl w-full grow-1 border-2 hover:scale-105"} src={audio}
                      alt="foto audio api"/>
                 <img onClick={() => {
                     navigate("/projects/3")
-                }} className={"object-cover object-center rounded-xl w-full grow-1 border-2"} src={gamereview}
+                }} className={"object-cover object-center rounded-xl w-full grow-1 border-2 hover:scale-105"}
+                     src={gamereview}
                      alt="foto gamereview"/>
             </motion.section>
 
@@ -52,14 +54,14 @@ function Home() {
                     <h2 className={"text-2xl font-heading pb-2"}>{home.contact2}</h2>
                 </div>
                 <div className={"flex flex-col md:flex-row gap-5 justify-center items-center"}>
-                    <a className={"text-5xl text-blue-300 hover:text-blue-400"}
+                    <a className={"text-5xl text-blue-300 hover:text-blue-400 hover:scale-110"}
                        href="mailto:christa_pol1@hotmail.com"><i
                         className="fa-solid fa-envelope"></i></a>
-                    <a className={"text-5xl text-blue-300 hover:text-blue-400"}
+                    <a className={"text-5xl text-blue-300 hover:text-blue-400 hover:scale-110"}
                        href={"https://www.linkedin.com/in/christa-pol/"}
                        target={"_blank"}><i
                         className="fa-brands fa-linkedin"></i></a>
-                    <a className={"text-5xl text-blue-300 hover:text-blue-400"}
+                    <a className={"text-5xl text-blue-300 hover:text-blue-400 hover:scale-110"}
                        href={"https://github.com/Chrisieee"} target={"_blank"}><i
                         className="fa-brands fa-github"></i></a>
                 </div>

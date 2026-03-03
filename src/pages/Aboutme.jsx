@@ -2,10 +2,12 @@ import pf from "../images/christa.jpg";
 import {useAbout} from "../context/AboutContext.jsx";
 import {useAnimate} from "../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
+import {useStyle} from "../context/StylingContext.jsx";
 
 function About() {
     const {about} = useAbout()
     const {containerVariants, itemVariants} = useAnimate()
+    const {cvButton} = useStyle()
 
     return (
         <motion.div className={"mx-4 grid md:grid-cols-4 grid-cols-2 gap-4 h-full"} variants={containerVariants}
@@ -27,18 +29,18 @@ function About() {
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-500 flex flex-col gap-1 justify-between md:row-span-3 col-span-2 md:col-span-1"}>
                 <h2 className={"text-2xl font-heading"}>Contact</h2>
-                <a className={"p-2 rounded-xl bg-blue-300 text-center border-2 border-blue-400 hover:bg-blue-400 hover:border-blue-300"}
+                <a className={cvButton}
                    href="/ChristaPol_CV_01-2026.pdf"
                    download={"ChristaPol_CV_01-2026.pdf"}>Download
                     CV ({about.cv})</a>
                 <div className={"flex gap-5 justify-center"}>
-                    <a className={"text-5xl text-blue-300 hover:text-blue-400"}
+                    <a className={"text-5xl text-blue-300 hover:text-blue-400 hover:scale-110"}
                        href="mailto:christa_pol1@hotmail.com"><i
                         className="fa-solid fa-envelope"></i></a>
-                    <a className={"text-5xl text-blue-300 hover:text-blue-400"}
+                    <a className={"text-5xl text-blue-300 hover:text-blue-400 hover:scale-110"}
                        href={"https://www.linkedin.com/in/christa-pol/"}
                        target={"_blank"}><i className="fa-brands fa-linkedin"></i></a>
-                    <a className={"text-5xl text-blue-300 hover:text-blue-400"}
+                    <a className={"text-5xl text-blue-300 hover:text-blue-400 hover:scale-110"}
                        href={"https://github.com/Chrisieee"} target={"_blank"}><i
                         className="fa-brands fa-github"></i></a>
                 </div>
@@ -57,7 +59,7 @@ function About() {
                 <p>- Media design</p>
                 <p>- 3D art</p>
             </motion.article>
-            
+
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-300 flex flex-col gap-5 row-span-2"}>
                 <div>
