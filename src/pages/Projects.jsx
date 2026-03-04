@@ -9,6 +9,9 @@ import {useLanguage} from "../context/Language.jsx";
 import {useAnimate} from "../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {useStyle} from "../context/StylingContext.jsx";
+import H2 from "../components/h2.jsx";
+import H3 from "../components/h3.jsx";
+import ProjectCard from "../components/projectCard.jsx";
 
 function Projects() {
     const {project} = useProjects()
@@ -22,14 +25,12 @@ function Projects() {
             <motion.section
                 variants={itemVariants}
                 className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-3 col-span-1 content-center text-center"}>
-                <h2 className={"text-3xl font-heading"}>{project.title} fun</h2>
+                <H2>{project.title} fun</H2>
             </motion.section>
 
-            <motion.section
-                variants={itemVariants} layoutId="project-5" layout="position"
-                className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
+            <ProjectCard layoutId="project-5">
                 <div>
-                    <h3 className={"text-3xl font-heading pb-2"}>Discord bot (solo)</h3>
+                    <H3 className={"pb-2"}>Discord bot (solo)</H3>
                     <motion.img layoutId="project-5-image"
                                 className={"object-cover object-left rounded-xl w-full h-50 border-2"} src={discord}
                                 alt="foto discord bot"/>
@@ -37,7 +38,7 @@ function Projects() {
                 <div className={"flex justify-evenly pt-2"}>
                     <p className={"text-lg"}><i className="fa-brands fa-js text-2xl"></i> Javascript</p>
                 </div>
-                <p>{project.project5}</p>
+                <p className={"text-sm"}>{project.project5}</p>
                 <div className={"flex-col flex gap-2"}>
                     <Link
                         className={button}
@@ -46,12 +47,11 @@ function Projects() {
                        href="https://github.com/Chrisieee/Hulpie" target={"_blank"}><i
                         className="fa-brands fa-github"></i> Github</a>
                 </div>
-            </motion.section>
+            </ProjectCard>
 
-            <motion.section layoutId="project-4" layout="position" variants={itemVariants}
-                            className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
+            <ProjectCard layoutId="project-4">
                 <div>
-                    <h3 className={"text-3xl font-heading pb-2"}>Audio API (solo)</h3>
+                    <H3 className={"pb-2"}>Audio API (solo)</H3>
                     <motion.img layoutId="project-4-image"
                                 className={"object-cover object-top rounded-xl w-full h-50 border-2"} src={audio}
                                 alt="foto audio api"/>
@@ -60,7 +60,7 @@ function Projects() {
                     <p className={"text-lg"}><i className="fa-brands fa-js text-2xl"></i> Javascript</p>
                     <p className={"text-lg"}><i className="fa-regular fa-file-code text-2xl"></i> Tailwind</p>
                 </div>
-                <p>{project.project4}</p>
+                <p className={"text-sm"}>{project.project4}</p>
                 <div className={"flex-col flex gap-2"}>
                     <Link
                         className={button}
@@ -69,19 +69,17 @@ function Projects() {
                        href="https://chrisieee.github.io/Audio-visual-experience/" target={"_blank"}><i
                         className="fa-solid fa-circle text-red-500"></i> Live project</a>
                 </div>
-            </motion.section>
+            </ProjectCard>
 
             <motion.section
                 variants={itemVariants}
                 className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-3 col-span-1 content-center text-center"}>
-                <h2 className={"text-3xl font-heading"}>{project.title} school</h2>
+                <H2>{project.title} school</H2>
             </motion.section>
 
-            <motion.section
-                variants={itemVariants} layoutId="project-3" layout="position"
-                className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
+            <ProjectCard layoutId="project-3">
                 <div>
-                    <h3 className={"text-3xl font-heading pb-2"}>Gamereviews (solo)</h3>
+                    <H3 className={"pb-2"}>Gamereviews (solo)</H3>
                     <motion.img layoutId="project-3-image"
                                 className={"object-cover object-center rounded-xl w-full h-50 border-2"}
                                 src={gamereview} alt="foto gamereview"/>
@@ -91,7 +89,7 @@ function Projects() {
                     <p className={"text-lg"}><i className="fa-regular fa-file-code text-2xl"></i> Tailwind</p>
                     <p className={"text-lg"}><i className="fa-regular fa-file-code text-2xl"></i> Express JS</p>
                 </div>
-                <p>{project.project3}</p>
+                <p className={"text-sm"}>{project.project3}</p>
                 <div className={"flex-col flex gap-2"}>
                     <Link
                         className={button}
@@ -105,12 +103,11 @@ function Projects() {
                             className="fa-brands fa-github"></i> Back-end</a>
                     </div>
                 </div>
-            </motion.section>
+            </ProjectCard>
 
-            <motion.section layoutId="project-2" variants={itemVariants} layout="position"
-                            className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
+            <ProjectCard layoutId="project-2">
                 <div>
-                    <h3 className={"text-3xl font-heading pb-2"}>{project.title2}</h3>
+                    <H3 className={"pb-2"}>{project.title2}</H3>
                     <motion.img layoutId="project-2-image"
                                 className={"object-cover object-left rounded-xl w-full h-50 border-2"} src={signatuur}
                                 alt="foto signatuur"/>
@@ -119,7 +116,7 @@ function Projects() {
                     <p className={"text-lg"}><i className="fa-brands fa-js text-2xl"></i> Javascript</p>
                     <p className={"text-lg"}><i className="fa-regular fa-file-code text-2xl"></i> Excalibur</p>
                 </div>
-                <p>{project.project2}</p>
+                <p className={"text-sm"}>{project.project2}</p>
                 <div className={"flex-col flex gap-2"}>
                     <Link
                         className={button}
@@ -128,12 +125,11 @@ function Projects() {
                        href="https://chrisieee.github.io/signatuuropdracht-tle2/" target={"_blank"}><i
                         className="fa-solid fa-circle text-red-500"></i> Live project</a>
                 </div>
-            </motion.section>
+            </ProjectCard>
 
-            <motion.section layoutId="project-1" variants={itemVariants} layout="position"
-                            className={"gap-2 shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 content-center text-center flex-col flex justify-between"}>
+            <ProjectCard layoutId="project-1">
                 <div>
-                    <h3 className={"text-3xl font-heading pb-2"}>Advocaderaser (solo)</h3>
+                    <H3 className={"pb-2"}>Advocaderaser (solo)</H3>
                     <motion.img layoutId="project-1-image"
                                 className={"object-cover object-left rounded-xl w-full h-50 border-2"}
                                 src={advocaderaser}
@@ -143,7 +139,7 @@ function Projects() {
                     <p className={"text-lg"}><i className="fa-brands fa-js text-2xl"></i> Javascript</p>
                     <p className={"text-lg"}><i className="fa-regular fa-file-code text-2xl"></i> Excalibur</p>
                 </div>
-                <p>{project.project1}</p>
+                <p className={"text-sm"}>{project.project1}</p>
                 <div className={"flex-col flex gap-2"}>
                     <Link
                         className={button}
@@ -152,7 +148,7 @@ function Projects() {
                        href="https://chrisieee.github.io/Advocaderaser/" target={"_blank"}><i
                         className="fa-solid fa-circle text-red-500"></i> Live project</a>
                 </div>
-            </motion.section>
+            </ProjectCard>
         </motion.div>
     )
 }
