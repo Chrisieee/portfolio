@@ -7,6 +7,7 @@ import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {useProjects} from "../../context/ProjectsContext.jsx";
 import {useLanguage} from "../../context/Language.jsx";
+import {GitButton} from "../../components/button.jsx";
 
 function Gamereviews() {
     const {containerVariants, itemVariants} = useAnimate()
@@ -57,13 +58,9 @@ function Gamereviews() {
                         </tbody>
                     </table>
                 </div>
-                <div className={"flex flex-col gap-2"}>
-                    <a className={"text-center p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
-                       href="https://github.com/Chrisieee/gamereviews-react" target={"_blank"}><i
-                        className="fa-brands fa-github"></i> Front-end</a>
-                    <a className={"text-center p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
-                       href="https://github.com/Chrisieee/gamereviews-express" target={"_blank"}><i
-                        className="fa-brands fa-github"></i> Back-end</a>
+                <div className={"flex flex-col gap-2 text-center"}>
+                    <GitButton link={"https://github.com/Chrisieee/gamereviews-react"}> Front-end</GitButton>
+                    <GitButton link={"https://github.com/Chrisieee/gamereviews-express"}> Back-end</GitButton>
                 </div>
             </motion.article>
             <motion.img variants={itemVariants}

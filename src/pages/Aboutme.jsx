@@ -2,20 +2,18 @@ import pf from "../images/christa.jpg";
 import {useAbout} from "../context/AboutContext.jsx";
 import {useAnimate} from "../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
-import {useStyle} from "../context/StylingContext.jsx";
-import H2 from "../components/h2.jsx";
-import H3 from "../components/h3.jsx";
+import {H2, H3} from "../components/headings.jsx";
 import SocialLinks from "../components/socialLinks.jsx";
-import Skills from "../components/skills.jsx";
-import Design from "../components/design.jsx";
-import FrontEnd from "../components/frontEnd.jsx";
-import BackEnd from "../components/backEnd.jsx";
-import Database from "../components/database.jsx";
+import Skills from "../components/info/skills.jsx";
+import Design from "../components/info/design.jsx";
+import FrontEnd from "../components/info/frontEnd.jsx";
+import BackEnd from "../components/info/backEnd.jsx";
+import Database from "../components/info/database.jsx";
+import {CvButton} from "../components/button.jsx";
 
 function About() {
     const {about} = useAbout()
     const {containerVariants, itemVariants} = useAnimate()
-    const {cvButton} = useStyle()
 
     return (
         <motion.div className={"mx-4 grid md:grid-cols-4 grid-cols-2 gap-4 h-full"} variants={containerVariants}
@@ -37,10 +35,7 @@ function About() {
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-500 flex flex-col gap-1 justify-between md:row-span-3 col-span-2 md:col-span-1"}>
                 <H2>Contact</H2>
-                <a className={cvButton}
-                   href="/ChristaPol_CV_01-2026.pdf"
-                   download={"ChristaPol_CV_01-2026.pdf"}>Download
-                    CV ({about.cv})</a>
+                <CvButton/>
                 <div className={"flex gap-5 justify-center"}>
                     <SocialLinks/>
                 </div>

@@ -1,23 +1,18 @@
-import {Link} from "react-router";
 import gamereview from "../images/Gamereviews.png";
 import signatuur from "../images/Signatuur.png";
 import advocaderaser from "../images/Advocaderaser.png";
 import audio from "../images/Audio.png";
 import discord from "../images/Discord.png";
 import {useProjects} from "../context/ProjectsContext.jsx";
-import {useLanguage} from "../context/Language.jsx";
 import {useAnimate} from "../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
-import {useStyle} from "../context/StylingContext.jsx";
-import H2 from "../components/h2.jsx";
-import H3 from "../components/h3.jsx";
+import {H2, H3} from "../components/headings.jsx";
 import ProjectCard from "../components/projectCard.jsx";
+import {Button, GitButton, InfoButton, LiveButton} from "../components/button.jsx";
 
 function Projects() {
     const {project} = useProjects()
-    const {language} = useLanguage()
     const {containerVariants, itemVariants} = useAnimate()
-    const {button, button2} = useStyle()
 
     return (
         <motion.div className={"mx-4 grid md:grid-cols-3 grid-cols-1 gap-4 h-full"}
@@ -40,12 +35,8 @@ function Projects() {
                 </div>
                 <p className={"text-sm"}>{project.project5}</p>
                 <div className={"flex-col flex gap-2"}>
-                    <Link
-                        className={button}
-                        to={"/projects/5"}>{language === "NL" ? "Meer informatie" : "More information"}</Link>
-                    <a className={button}
-                       href="https://github.com/Chrisieee/Hulpie" target={"_blank"}><i
-                        className="fa-brands fa-github"></i> Github</a>
+                    <InfoButton link={"/projects/5"}/>
+                    <GitButton link="https://github.com/Chrisieee/Hulpie"> Github</GitButton>
                 </div>
             </ProjectCard>
 
@@ -62,12 +53,8 @@ function Projects() {
                 </div>
                 <p className={"text-sm"}>{project.project4}</p>
                 <div className={"flex-col flex gap-2"}>
-                    <Link
-                        className={button}
-                        to={"/projects/4"}>{language === "NL" ? "Meer informatie" : "More information"}</Link>
-                    <a className={button}
-                       href="https://chrisieee.github.io/Audio-visual-experience/" target={"_blank"}><i
-                        className="fa-solid fa-circle text-red-500"></i> Live project</a>
+                    <InfoButton link={"/projects/4"}/>
+                    <LiveButton link="https://chrisieee.github.io/Audio-visual-experience/"/>
                 </div>
             </ProjectCard>
 
@@ -91,16 +78,10 @@ function Projects() {
                 </div>
                 <p className={"text-sm"}>{project.project3}</p>
                 <div className={"flex-col flex gap-2"}>
-                    <Link
-                        className={button}
-                        to={"/projects/3"}>{language === "NL" ? "Meer informatie" : "More information"}</Link>
+                    <InfoButton link={"/projects/3"}/>
                     <div className={"w-full flex gap-2"}>
-                        <a className={button2}
-                           href="https://github.com/Chrisieee/gamereviews-react" target={"_blank"}><i
-                            className="fa-brands fa-github"></i> Front-end</a>
-                        <a className={button2}
-                           href="https://github.com/Chrisieee/gamereviews-express" target={"_blank"}><i
-                            className="fa-brands fa-github"></i> Back-end</a>
+                        <GitButton href="https://github.com/Chrisieee/gamereviews-react"> Front-end</GitButton>
+                        <GitButton href="https://github.com/Chrisieee/gamereviews-express"> Back-end</GitButton>
                     </div>
                 </div>
             </ProjectCard>
@@ -118,12 +99,8 @@ function Projects() {
                 </div>
                 <p className={"text-sm"}>{project.project2}</p>
                 <div className={"flex-col flex gap-2"}>
-                    <Link
-                        className={button}
-                        to={"/projects/2"}>{language === "NL" ? "Meer informatie" : "More information"}</Link>
-                    <a className={button}
-                       href="https://chrisieee.github.io/signatuuropdracht-tle2/" target={"_blank"}><i
-                        className="fa-solid fa-circle text-red-500"></i> Live project</a>
+                    <InfoButton link={"/projects/2"}/>
+                    <LiveButton link="https://chrisieee.github.io/signatuuropdracht-tle2/"/>
                 </div>
             </ProjectCard>
 
@@ -141,12 +118,8 @@ function Projects() {
                 </div>
                 <p className={"text-sm"}>{project.project1}</p>
                 <div className={"flex-col flex gap-2"}>
-                    <Link
-                        className={button}
-                        to={"/projects/1"}>{language === "NL" ? "Meer informatie" : "More information"}</Link>
-                    <a className={button}
-                       href="https://chrisieee.github.io/Advocaderaser/" target={"_blank"}><i
-                        className="fa-solid fa-circle text-red-500"></i> Live project</a>
+                    <InfoButton link={"/projects/1"}/>
+                    <LiveButton link="https://chrisieee.github.io/Advocaderaser/"/>
                 </div>
             </ProjectCard>
         </motion.div>

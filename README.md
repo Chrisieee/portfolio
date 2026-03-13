@@ -9,6 +9,11 @@ Dit is de repo voor mijn developer portfolio.
 
 - ?
 
+### Projecten:
+
+- Verder met game project
+- Eigen plannings app?
+
 ### Moet voor website:
 
 - ?

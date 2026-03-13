@@ -2,7 +2,7 @@ import pf from "../images/christa.jpg";
 import {useHome} from "../context/HomeContext.jsx";
 import {useAnimate} from "../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
-import H2 from "../components/h2.jsx";
+import {H2} from "../components/headings.jsx";
 import SocialLinks from "../components/socialLinks.jsx";
 import ProjectImgHome from "../components/projectImgHome.jsx";
 
@@ -37,7 +37,7 @@ function Home() {
                     <H2>{home.contact1}</H2>
                     <H2 className={"pb-2"}>{home.contact2}</H2>
                 </div>
-                <div className={"flex flex-col md:flex-row gap-5 justify-center items-center"}>
+                <div className={"flex flex-col sm:flex-row gap-5 justify-center items-center"}>
                     <SocialLinks/>
                 </div>
             </motion.section>

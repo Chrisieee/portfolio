@@ -3,6 +3,7 @@ import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {useProjects} from "../../context/ProjectsContext.jsx";
 import {useLanguage} from "../../context/Language.jsx";
+import {GitButton} from "../../components/button.jsx";
 
 function Discordbot() {
     const {containerVariants, itemVariants} = useAnimate()
@@ -34,13 +35,19 @@ function Discordbot() {
                             <td><i className="fa-brands fa-js"></i></td>
                             <td className={"w-8/9"}>Javascript</td>
                         </tr>
+                        <tr>
+                            <td><i className="fa-regular fa-file-code"></i></td>
+                            <td className={"w-8/9"}>Discord.js</td>
+                        </tr>
+                        <tr>
+                            <td><i className="fa-regular fa-file-code"></i></td>
+                            <td className={"w-8/9"}>Twitch API</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
-                <div className={"flex flex-col gap-2"}>
-                    <a className={"text-center p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
-                       href="https://github.com/Chrisieee/Hulpie" target={"_blank"}><i
-                        className="fa-brands fa-github"></i> Github</a>
+                <div className={"flex flex-col gap-2 text-center"}>
+                    <GitButton link={"https://github.com/Chrisieee/Hulpie"}> Github</GitButton>
                 </div>
             </motion.article>
         </motion.div>

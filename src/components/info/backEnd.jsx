@@ -1,4 +1,4 @@
-import {useAbout} from "../context/AboutContext.jsx";
+import {useAbout} from "../../context/AboutContext.jsx";
 
 function BackEnd() {
     const {about} = useAbout()

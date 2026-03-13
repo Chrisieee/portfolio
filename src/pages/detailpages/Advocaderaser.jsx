@@ -7,6 +7,7 @@ import {useProjects} from "../../context/ProjectsContext.jsx";
 import {useLanguage} from "../../context/Language.jsx";
 import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
+import {GitButton, LiveButton} from "../../components/button.jsx";
 
 function Advocaderaser() {
     const {advo} = useProjects()
@@ -51,12 +52,9 @@ function Advocaderaser() {
                         </tbody>
                     </table>
                 </div>
-                <div className={"flex flex-col gap-2"}>
-                    <a className={"text-center p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
-                       href="https://chrisieee.github.io/Advocaderaser/" target={"_blank"}>Live project</a>
-                    <a className={"text-center p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300"}
-                       href="https://github.com/Chrisieee/Advocaderaser" target={"_blank"}><i
-                        className="fa-brands fa-github"></i> Github</a>
+                <div className={"flex flex-col gap-2 text-center"}>
+                    <LiveButton link="https://chrisieee.github.io/Advocaderaser/"/>
+                    <GitButton link="https://github.com/Chrisieee/Advocaderaser"> Github</GitButton>
                 </div>
             </motion.article>
             <motion.img variants={itemVariants}
