@@ -16,7 +16,8 @@ Dit is de repo voor mijn developer portfolio.
 
 ### Moet voor website:
 
-- ?
+- Trippie op portfolio zetten
+- StageLink op portfolio zetten
 
 #### Informatie:
 

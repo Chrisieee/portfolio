@@ -1,5 +1,5 @@
 import './index.css'
-import {HashRouter, Link, Outlet, Route, RouterProvider, Routes} from "react-router";
+import {Route, Routes} from "react-router";
 import Layout from "./Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
@@ -10,6 +10,8 @@ import Gamereviews from "./pages/detailpages/Gamereviews.jsx";
 import Audio from "./pages/detailpages/Audio.jsx";
 import Discordbot from "./pages/detailpages/Discordbot.jsx";
 import Error from "./pages/Error.jsx";
+import Stagelink from "./pages/detailpages/Stagelink.jsx";
+import Trippie from "./pages/detailpages/Trippie.jsx";
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
                     <Route path="/projects/3" element={<Gamereviews/>}/>
                     <Route path="/projects/4" element={<Audio/>}/>
                     <Route path="/projects/5" element={<Discordbot/>}/>
+                    <Route path="/projects/6" element={<Trippie/>}/>
+                    <Route path="/projects/7" element={<Stagelink/>}/>
                     <Route path="/about-me" element={<About/>}/>
                     <Route path="*" element={<Error/>}/>
                 </Route>

@@ -11,7 +11,8 @@ export function ProjectsProvider({children}) {
         project3: "Dit is een full stack project van school. Hierbij moesten we de front-end en de back-end zelf maken.",
         project4: "Dit is een projectje wat ik voor de lol heb gedaan. Ik wou iets maken wat Audio visueel zou maken. Dit heb ik gedaan met de Audio API.",
         project5: "Dit is een project waar ik nog mee bezig ben. Ik ben een eigen discord bot aan het bouwen voor onder andere twitch & youtube meldingen.",
-
+        project6: "Dit is een project waar we iets moesten maken waardoor reizen met het OV makkelijker werd voor iemand met een LVB. We hebben eigenlijk een versimpelde versie van de NS app gemaakt.",
+        project7: "",
     }
     const projectEN = {
         title: "Projects",
@@ -20,7 +21,10 @@ export function ProjectsProvider({children}) {
         title2: "Signature game (solo)",
         project3: "This is a full stack project from school. We needed to make the back-end and front-end ourselves.",
         project4: "I made this project for fun. I wanted to make something that made audio something visual. I made this using the Audio API.",
-        project5: "This is a work in progress project. I am making my own discord bot to give twitch and youtube alerts in a server."
+        project5: "This is a work in progress project. I am making my own discord bot to give twitch and youtube alerts in a server.",
+        project6: "For this project we needed to make something to make traveling with train easer for someone with a intellectual disability. We sort of made a easier version of the NS app.",
+        project7: ""
+
     }
     const [project, setProject] = useState(projectNL)
 

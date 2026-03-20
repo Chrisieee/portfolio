@@ -37,6 +37,15 @@ export function GitButton({children, link}) {
     )
 }
 
+export function ShowcaseButton({link}) {
+    return (
+        <Link
+            className="p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300 hover:scale-105"
+            to={link} target="_blank">
+            <i className="fa-solid fa-tv"></i> Project showcase</Link>
+    )
+}
+
 export function CvButton() {
     const {about} = useAbout()
     return (
