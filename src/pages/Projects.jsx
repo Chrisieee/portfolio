@@ -10,10 +10,17 @@ import {
     StagelinkCard
 } from "../components/schoolProjects.jsx";
 import {AudioCard, DiscordbotCard} from "../components/funProjects.jsx";
+import {useEffect} from "react";
+import {useLanguage} from "../context/Language.jsx";
 
 function Projects() {
     const {project} = useProjects()
     const {containerVariants, itemVariants} = useAnimate()
+    const {language} = useLanguage()
+
+    useEffect(() => {
+        document.title = `Christa | ${language === "NL" ? "Projecten" : "Projects"}`
+    }, [language]);
 
     return (
         <motion.div className={"mx-4 grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 h-full"}
@@ -23,7 +30,7 @@ function Projects() {
                 className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-3 xl:col-span-4 sm:col-span-2 col-span-1 content-center text-center"}>
                 <H2>{project.title} fun</H2>
             </motion.section>
-            
+
             <DiscordbotCard/>
             <AudioCard/>
 

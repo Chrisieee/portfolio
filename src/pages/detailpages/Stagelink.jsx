@@ -7,13 +7,18 @@ import {useProjects} from "../../context/ProjectsContext.jsx";
 import {useLanguage} from "../../context/Language.jsx";
 import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
-import {GitButton, LiveButton, ShowcaseButton} from "../../components/button.jsx";
+import {GitButton, ShowcaseButton} from "../../components/button.jsx";
 import {H2, H3} from "../../components/headings.jsx";
+import {useEffect} from "react";
 
 function StageLink() {
-    const {sign} = useProjects()
+    const {stage} = useProjects()
     const {language} = useLanguage()
     const {containerVariants, itemVariants} = useAnimate()
+
+    useEffect(() => {
+        document.title = "Christa | StageLink project"
+    })
 
     return (
         <motion.section layoutId="project-7" className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"}
@@ -21,14 +26,14 @@ function StageLink() {
                         exit={{opacity: 0}}
                         transition={{duration: 0.2}}>
             <motion.img layoutId="project-7-image" variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-left rounded-xl col-span-2 row-span-1"}
+                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-2 row-span-1"}
                         src={foto} alt="foto stagelink"/>
 
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
                 <H2 className={"text-3xl font-heading pb-2"}>StageLink (team)</H2>
-                <p className={"text-sm"}>{sign.details1}</p>
-                <p className={"text-sm pt-2"}>{sign.details2}</p>
+                <p className={"text-sm"}>{stage.details1}</p>
+                <p className={"text-sm pt-2"}>{stage.details2}</p>
             </motion.article>
 
             <motion.article variants={itemVariants}

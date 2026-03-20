@@ -9,11 +9,16 @@ import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {LiveButton} from "../../components/button.jsx";
 import {H2, H3} from "../../components/headings.jsx";
+import {useEffect} from "react";
 
 function Trippie() {
-    const {sign} = useProjects()
+    const {trippie} = useProjects()
     const {language} = useLanguage()
     const {containerVariants, itemVariants} = useAnimate()
+
+    useEffect(() => {
+        document.title = "Christa | Trippie project"
+    })
 
     return (
         <motion.section layoutId="project-6" className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"}
@@ -27,8 +32,8 @@ function Trippie() {
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
                 <H2 className={"text-3xl font-heading pb-2"}>Trippie (team)</H2>
-                <p className={"text-sm"}>{sign.details1}</p>
-                <p className={"text-sm pt-2"}>{sign.details2}</p>
+                <p className={"text-sm"}>{trippie.details1}</p>
+                <p className={"text-sm pt-2"}>{trippie.details2}</p>
             </motion.article>
 
             <motion.article variants={itemVariants}

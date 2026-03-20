@@ -8,11 +8,16 @@ import {useLanguage} from "../../context/Language.jsx";
 import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {GitButton, LiveButton} from "../../components/button.jsx";
+import {useEffect} from "react";
 
 function Signatuur() {
     const {sign} = useProjects()
     const {language} = useLanguage()
     const {containerVariants, itemVariants} = useAnimate()
+
+    useEffect(() => {
+        document.title = `Christa | ${language === "NL" ? "Signatuur project" : "Signature project"}`
+    }, [language])
 
     return (
         <motion.section layoutId="project-2" className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"}

@@ -8,22 +8,22 @@ export function ProjectsProvider({children}) {
         project1: "Voor dit project heb ik een simpele platformer gemaakt in de Excalibur game engine. Dit was een project die ik heb gemaakt voor school.",
         project2: "Dit was een project waar je een eigen vorm mocht kiezen om je groei te laten zien. Ik heb hiervoor een simpele platformer gemaakt met verschillende werelden en levels.",
         title2: "Signatuur game (solo)",
-        project3: "Dit is een full stack project van school. Hierbij moesten we de front-end en de back-end zelf maken.",
-        project4: "Dit is een projectje wat ik voor de lol heb gedaan. Ik wou iets maken wat Audio visueel zou maken. Dit heb ik gedaan met de Audio API.",
+        project3: "Dit was een full stack project van school. Hierbij moesten we de front-end en de back-end zelf maken. Dit heb ik gedaan met React voor de front-end en Express voor de back-end.",
+        project4: "Dit was een projectje wat ik voor de lol heb gedaan. Ik wou iets maken wat Audio visueel zou maken. Dit heb ik gedaan met de Audio API.",
         project5: "Dit is een project waar ik nog mee bezig ben. Ik ben een eigen discord bot aan het bouwen voor onder andere twitch & youtube meldingen.",
-        project6: "Dit is een project waar we iets moesten maken waardoor reizen met het OV makkelijker werd voor iemand met een LVB. We hebben eigenlijk een versimpelde versie van de NS app gemaakt.",
-        project7: "",
+        project6: "Dit was een project waar we iets moesten maken waardoor reizen met het OV makkelijker werd voor iemand met een LVB. We hebben eigenlijk een versimpelde versie van de NS app gemaakt.",
+        project7: "Dit was een project waar we een platform moesten maken voor studenten waarbij studenten aan stageopdrachten worden gekoppeld met een matchscore die gemaakt werd door een AI.",
     }
     const projectEN = {
         title: "Projects",
         project1: "I made a simple platformer game for this project. I made this in the Excalibur game engine. This was a project I made for school.",
         project2: "We had the change to choice our own methode to show our grow. I choose to make a game for this project with different levels and worlds.",
         title2: "Signature game (solo)",
-        project3: "This is a full stack project from school. We needed to make the back-end and front-end ourselves.",
+        project3: "This is a full stack project from school. We needed to make the back-end and front-end ourselves. I made the front-end with React and the back-end with Express.",
         project4: "I made this project for fun. I wanted to make something that made audio something visual. I made this using the Audio API.",
         project5: "This is a work in progress project. I am making my own discord bot to give twitch and youtube alerts in a server.",
         project6: "For this project we needed to make something to make traveling with train easer for someone with a intellectual disability. We sort of made a easier version of the NS app.",
-        project7: ""
+        project7: "For this project we needed to make a platform for students. On this platform students got matched with internships with a matchscore made with a AI."
 
     }
     const [project, setProject] = useState(projectNL)
@@ -80,6 +80,26 @@ export function ProjectsProvider({children}) {
     }
     const [bot, setBot] = useState(botNL)
 
+    const trippieNL = {
+        details1: "Dit was een project waarbij we in groepjes een oplossing moesten vinden voor een doelgroep met een beperking. Onze doelgroep was hierbij mensen met een LVB en de situatie waar we een oplossing voor moesten vinden was reizen met het OV. Uiteindelijk kwamen we met interviewen en testen op dat apps zoals de 9292 en NS app te onduidelijk zijn en hier zijn we mee aan de slag gegaan.",
+        details2: "Tijdens dit project heb ik me vooral gewerkt aan de overzicht pagina van de verschillende reis mogelijkheden en de details van de reis. Hierbij heb ik opgelet dat niet alle informatie gelijk zichtbaar is, maar dat bijvoorbeeld alle tussen stations in en uitklapbaar zijn. Ook kan je elke trein in en uitklappen. Bij dit project heb ik met verschillende nieuwe dingen gewerkt zo heb ik voor het eerst de NS api gebruikt om alle informatie op te halen en de google api om foto's van de stations toe te voegen.",
+    }
+    const trippieEN = {
+        details1: "",
+        details2: "",
+    }
+    const [trippie, setTrippie] = useState(trippieNL)
+
+    const stageNL = {
+        details1: "Dit was een project waarbij we in groepjes een product bij een casus moesten maken. Onze groep had een casus waarbij we een platform moesten bouwen om studenten te koppelen aan stageopdrachten doormiddel van een AI algoritme. We waren hierbij opgedeeld in een back-end en front-end team. Ik zat zelf in het front-end team en heb de pagina's die hiernaast en hieronder staan gemaakt.",
+        details2: "Tijdens dit project heb ik een aantal nieuwe dingen geleerd en gebruikt. Zo hadden we als front-end team de keuze gemaakt om typescript te gebruiken, maar ook Tanstack router/form/query, Zod en nog een aantal nieuwe dingen. Dit was even wennen voor mij, maar ook wel heel leerzaam. Ook was dit de eerste keer dat we met een los back-end en front-end team werkte wat ook even wennen was. Ik ben erg blij met het product wat we hebben gebouwd al waren er zeker nog dingen die we toe hadden willen voegen.",
+    }
+    const stageEN = {
+        details1: "",
+        details2: "",
+    }
+    const [stage, setStage] = useState(stageNL)
+
 
     return (
         <ProjectsContext.Provider value={{
@@ -89,6 +109,8 @@ export function ProjectsProvider({children}) {
             reviewNL, reviewEN, review, setReview,
             audioNL, audioEN, audio, setAudio,
             botNL, botEN, bot, setBot,
+            trippieNL, trippieEN, trippie, setTrippie,
+            stageNL, stageEN, stage, setStage,
         }}>
             {children}
         </ProjectsContext.Provider>

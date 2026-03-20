@@ -5,10 +5,15 @@ import {motion} from "framer-motion";
 import {H2} from "../components/headings.jsx";
 import SocialLinks from "../components/socialLinks.jsx";
 import ProjectImgHome from "../components/projectImgHome.jsx";
+import {useEffect} from "react";
 
 function Home() {
     const {home} = useHome()
     const {containerVariants, itemVariants} = useAnimate()
+
+    useEffect(() => {
+        document.title = "Christa | Home"
+    }, []);
 
     return (
         <motion.div

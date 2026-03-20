@@ -4,11 +4,16 @@ import {motion} from "framer-motion";
 import {useProjects} from "../../context/ProjectsContext.jsx";
 import {useLanguage} from "../../context/Language.jsx";
 import {GitButton, LiveButton} from "../../components/button.jsx";
+import {useEffect} from "react";
 
 function Audio() {
     const {containerVariants, itemVariants} = useAnimate()
     const {audio} = useProjects()
     const {language} = useLanguage()
+
+    useEffect(() => {
+        document.title = `Christa | Audio API project`
+    }, [language])
 
     return (
         <motion.div layoutId="project-4" className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"}

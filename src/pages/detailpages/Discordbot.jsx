@@ -4,11 +4,16 @@ import {motion} from "framer-motion";
 import {useProjects} from "../../context/ProjectsContext.jsx";
 import {useLanguage} from "../../context/Language.jsx";
 import {GitButton} from "../../components/button.jsx";
+import {useEffect} from "react";
 
 function Discordbot() {
     const {containerVariants, itemVariants} = useAnimate()
     const {bot} = useProjects()
     const {language} = useLanguage()
+
+    useEffect(() => {
+        document.title = `Christa | Discord bot project`
+    }, [language])
 
     return (
         <motion.div layoutId="project-5" className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"}

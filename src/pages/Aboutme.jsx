@@ -10,10 +10,17 @@ import FrontEnd from "../components/info/frontEnd.jsx";
 import BackEnd from "../components/info/backEnd.jsx";
 import Database from "../components/info/database.jsx";
 import {CvButton} from "../components/button.jsx";
+import {useEffect} from "react";
+import {useLanguage} from "../context/Language.jsx";
 
 function About() {
     const {about} = useAbout()
     const {containerVariants, itemVariants} = useAnimate()
+    const {language} = useLanguage()
+
+    useEffect(() => {
+        document.title = `Christa | ${language === "NL" ? "Over mij" : "About me"}`
+    }, [language])
 
     return (
         <motion.div className={"mx-4 grid md:grid-cols-4 grid-cols-2 gap-4 h-full"} variants={containerVariants}
