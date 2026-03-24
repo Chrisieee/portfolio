@@ -9,6 +9,7 @@ import {useProjects} from "../../context/ProjectsContext.jsx";
 import {useLanguage} from "../../context/Language.jsx";
 import {GitButton} from "../../components/button.jsx";
 import {useEffect} from "react";
+import ProjectImg from "../../components/projectImg.jsx";
 
 function Gamereviews() {
     const {containerVariants, itemVariants} = useAnimate()
@@ -68,19 +69,11 @@ function Gamereviews() {
                     <GitButton link={"https://github.com/Chrisieee/gamereviews-express"}> Back-end</GitButton>
                 </div>
             </motion.article>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto2} alt="foto advocaderaser"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto3} alt="foto advocaderaser"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto4} alt="foto advocaderaser"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto5} alt="foto advocaderaser"/>
-
+            
+            <ProjectImg src={foto2} project={"gamereviews"} classname={"object-center"}/>
+            <ProjectImg src={foto3} project={"gamereviews"} classname={"object-center"}/>
+            <ProjectImg src={foto4} project={"gamereviews"} classname={"object-center"}/>
+            <ProjectImg src={foto5} project={"gamereviews"} classname={"object-center"}/>
         </motion.div>
     )
 }

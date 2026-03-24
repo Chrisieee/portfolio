@@ -10,6 +10,7 @@ import {motion} from "framer-motion";
 import {GitButton, ShowcaseButton} from "../../components/button.jsx";
 import {H2, H3} from "../../components/headings.jsx";
 import {useEffect} from "react";
+import ProjectImg from "../../components/projectImg.jsx";
 
 function StageLink() {
     const {stage} = useProjects()
@@ -66,18 +67,11 @@ function StageLink() {
                     <GitButton link={"https://github.com/TLE-3-Stage-Matching/Front-End-4B"}> Github</GitButton>
                 </div>
             </motion.article>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto2} alt="foto stagelink"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto3} alt="foto stagelink"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto4} alt="foto stagelink"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto5} alt="foto stagelink"/>
+
+            <ProjectImg src={foto2} project={"stagelink"} classname={"object-center"}/>
+            <ProjectImg src={foto3} project={"stagelink"} classname={"object-center"}/>
+            <ProjectImg src={foto4} project={"stagelink"} classname={"object-center"}/>
+            <ProjectImg src={foto5} project={"stagelink"} classname={"object-center"}/>
         </motion.section>
     )
 }

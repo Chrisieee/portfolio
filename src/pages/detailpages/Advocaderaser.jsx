@@ -9,6 +9,7 @@ import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {GitButton, LiveButton} from "../../components/button.jsx";
 import {useEffect} from "react";
+import ProjectImg from "../../components/projectImg.jsx";
 
 function Advocaderaser() {
     const {advo} = useProjects()
@@ -62,19 +63,10 @@ function Advocaderaser() {
                     <GitButton link="https://github.com/Chrisieee/Advocaderaser"> Github</GitButton>
                 </div>
             </motion.article>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto2} alt="foto advocaderaser"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-right rounded-xl col-span-1 row-span-1"}
-                        src={foto3} alt="foto advocaderaser"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-right rounded-xl col-span-1 row-span-1"}
-                        src={foto4} alt="foto advocaderaser"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto5} alt="foto advocaderaser"/>
-
+            <ProjectImg src={foto2} project={"advocaderaser"} classname={"object-center"}/>
+            <ProjectImg src={foto3} project={"advocaderaser"} classname={"object-right"}/>
+            <ProjectImg src={foto4} project={"advocaderaser"} classname={"object-right"}/>
+            <ProjectImg src={foto5} project={"advocaderaser"} classname={"object-center"}/>
         </motion.div>
     )
 }

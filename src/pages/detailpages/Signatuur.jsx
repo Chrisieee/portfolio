@@ -9,6 +9,7 @@ import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {GitButton, LiveButton} from "../../components/button.jsx";
 import {useEffect} from "react";
+import ProjectImg from "../../components/projectImg.jsx";
 
 function Signatuur() {
     const {sign} = useProjects()
@@ -61,18 +62,11 @@ function Signatuur() {
                     <GitButton link={"https://github.com/Chrisieee/signatuuropdracht-tle2"}> Github</GitButton>
                 </div>
             </motion.article>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto2} alt="foto signatuur"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto3} alt="foto signatuur"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-left rounded-xl col-span-1 row-span-1"}
-                        src={foto4} alt="foto signatuur"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto5} alt="foto signatuur"/>
+
+            <ProjectImg src={foto2} project={"signatuur"} classname={"object-center"}/>
+            <ProjectImg src={foto3} project={"signatuur"} classname={"object-center"}/>
+            <ProjectImg src={foto4} project={"signatuur"} classname={"object-left"}/>
+            <ProjectImg src={foto5} project={"signatuur"} classname={"object-center"}/>
         </motion.section>
     )
 }

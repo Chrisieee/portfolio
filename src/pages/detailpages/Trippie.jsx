@@ -10,6 +10,7 @@ import {motion} from "framer-motion";
 import {LiveButton} from "../../components/button.jsx";
 import {H2, H3} from "../../components/headings.jsx";
 import {useEffect} from "react";
+import ProjectImg from "../../components/projectImg.jsx";
 
 function Trippie() {
     const {trippie} = useProjects()
@@ -65,18 +66,11 @@ function Trippie() {
                     <LiveButton link={"https://project.cmi.hr.nl/2024_2025/cle3_t10/trippie/"}/>
                 </div>
             </motion.article>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto2} alt="foto Trippie"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto3} alt="foto Trippie"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto4} alt="foto Trippie"/>
-            <motion.img variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-1 row-span-1"}
-                        src={foto5} alt="foto Trippie"/>
+
+            <ProjectImg src={foto2} project={"trippie"} classname={"object-center"}/>
+            <ProjectImg src={foto3} project={"trippie"} classname={"object-center"}/>
+            <ProjectImg src={foto4} project={"trippie"} classname={"object-center"}/>
+            <ProjectImg src={foto5} project={"trippie"} classname={"object-center"}/>
         </motion.section>
     )
 }

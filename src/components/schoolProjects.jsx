@@ -95,6 +95,7 @@ function TrippieCard() {
                             src={trippie} alt="foto trippie"/>
             </div>
             <div className={"flex justify-evenly pt-2"}>
+                <p className={"text-lg"}><i className="fa-brands fa-html5 text-2xl"></i> HTML</p>
                 <p className={"text-lg"}><i className="fa-brands fa-js text-2xl"></i> Javascript</p>
                 <p className={"text-lg"}><i className="fa-regular fa-file-code text-2xl"></i> CSS</p>
             </div>
