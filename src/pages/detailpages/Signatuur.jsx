@@ -32,6 +32,7 @@ function Signatuur() {
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
                 <h2 className={"text-3xl font-heading pb-2"}>Signatuur (solo)</h2>
+                <p>08-01-2026 - 16-01-2026</p>
                 <p className={"text-sm"}>{sign.details1}</p>
                 <p className={"text-sm pt-2"}>{sign.details2}</p>
             </motion.article>

@@ -26,6 +26,7 @@ function Audio() {
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
                 <h2 className={"text-3xl font-heading pb-2"}>Audio API (solo)</h2>
+                <p>02-02-2026 - 03-02-2026</p>
                 <p className={"text-sm"}>{audio.details1}</p>
                 <p className={"text-sm pt-2"}>{audio.details2}</p>
             </motion.article>

@@ -32,6 +32,7 @@ function Advocaderaser() {
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
                 <h2 className={"text-3xl font-heading pb-2"}>Advocaderaser (solo)</h2>
+                <p>06-05-2026 - 04-06-2025</p>
                 <p className={"text-sm"}>{advo.details1}</p>
                 <p className={"text-sm pt-2"}>{advo.details2}</p>
                 <p className={"text-sm pt-2"}>{advo.details3}</p>

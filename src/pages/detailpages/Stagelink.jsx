@@ -33,6 +33,7 @@ function StageLink() {
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
                 <H2 className={"text-3xl font-heading pb-2"}>StageLink (team)</H2>
+                <p>02-03-2025 - 19-03-2025</p>
                 <p className={"text-sm"}>{stage.details1}</p>
                 <p className={"text-sm pt-2"}>{stage.details2}</p>
             </motion.article>

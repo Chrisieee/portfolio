@@ -16,6 +16,7 @@ function AdvocaderaserCard() {
         <ProjectCard layoutId="project-1">
             <div>
                 <H3 className={"pb-2"}>Advocaderaser (solo)</H3>
+                <p>06-05-2026 - 04-06-2025</p>
                 <motion.img layoutId="project-1-image"
                             className={"object-cover object-left rounded-xl w-full h-50 border-2"}
                             src={advocaderaser}
@@ -40,6 +41,7 @@ function SignatuurCard() {
         <ProjectCard layoutId="project-2">
             <div>
                 <H3 className={"pb-2"}>{project.title2}</H3>
+                <p>08-01-2026 - 16-01-2026</p>
                 <motion.img layoutId="project-2-image"
                             className={"object-cover object-left rounded-xl w-full h-50 border-2"} src={signatuur}
                             alt="foto signatuur"/>
@@ -63,6 +65,7 @@ function GamereviewsCard() {
         <ProjectCard layoutId="project-3">
             <div>
                 <H3 className={"pb-2"}>Gamereviews (solo)</H3>
+                <p>19-01-2026 - 27-01-2026</p>
                 <motion.img layoutId="project-3-image"
                             className={"object-cover object-center rounded-xl w-full h-50 border-2"}
                             src={gamereview} alt="foto gamereview"/>
@@ -90,6 +93,7 @@ function TrippieCard() {
         <ProjectCard layoutId="project-6">
             <div>
                 <H3 className={"pb-2"}>Trippie (team)</H3>
+                <p>09-04-2025 - 24-05-2025</p>
                 <motion.img layoutId="project-6-image"
                             className={"object-cover object-center rounded-xl w-full h-50 border-2"}
                             src={trippie} alt="foto trippie"/>
@@ -114,6 +118,7 @@ function StagelinkCard() {
         <ProjectCard layoutId="project-7">
             <div>
                 <H3 className={"pb-2"}>StageLink (team)</H3>
+                <p>02-03-2025 - 19-03-2025</p>
                 <motion.img layoutId="project-7-image"
                             className={"object-cover object-center rounded-xl w-full h-50 border-2"}
                             src={stagelink} alt="foto stagelink"/>

@@ -31,6 +31,7 @@ function Gamereviews() {
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
                 <h2 className={"text-3xl font-heading pb-2"}>Gamereviews (solo)</h2>
+                <p>19-01-2026 - 27-01-2026</p>
                 <p className={"text-sm"}>{review.details1}</p>
                 <p className={"text-sm pt-2"}>{review.details2}</p>
             </motion.article>
@@ -69,7 +70,7 @@ function Gamereviews() {
                     <GitButton link={"https://github.com/Chrisieee/gamereviews-express"}> Back-end</GitButton>
                 </div>
             </motion.article>
-            
+
             <ProjectImg src={foto2} project={"gamereviews"} classname={"object-center"}/>
             <ProjectImg src={foto3} project={"gamereviews"} classname={"object-center"}/>
             <ProjectImg src={foto4} project={"gamereviews"} classname={"object-center"}/>

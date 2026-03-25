@@ -2,7 +2,8 @@ function Skills() {
     return (
         <>
             <p>- Web design</p>
-            <p>- Web development</p>
+            <p>- Front-end development</p>
+            <p>- Back-end development</p>
             <p>- Media design</p>
             <p>- 3D art</p>
         </>

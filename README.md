@@ -11,13 +11,13 @@ Dit is de repo voor mijn developer portfolio.
 
 ### Projecten:
 
-- Verder met game project
-- Eigen plannings app?
+- Verder met Advocaderaser game ~ Godot
+- Plannings app?
+- Bullet journal app ~ React Native
 
 ### Moet voor website:
 
-- Trippie vertalen
-- StageLink vertalen
+- WCAG check
 
 #### Informatie:
 

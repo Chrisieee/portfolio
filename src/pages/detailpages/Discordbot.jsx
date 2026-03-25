@@ -26,6 +26,7 @@ function Discordbot() {
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
                 <h2 className={"text-3xl font-heading pb-2"}>Discord bot (solo)</h2>
+                <p>30-01-2026 - {language === "NL" ? "Heden" : "Present"}</p>
                 <p className={"text-sm"}>{bot.details1}</p>
                 <p className={"text-sm pt-2"}>{bot.details2}</p>
             </motion.article>

@@ -15,7 +15,9 @@ export function LanguageProvider({children}) {
         signNL, signEN, setSign,
         reviewNL, reviewEN, setReview,
         audioNL, audioEN, setAudio,
-        botNL, botEN, setBot
+        botNL, botEN, setBot,
+        trippieNL, trippieEN, setTrippie,
+        stageNL, stageEN, setStage,
     } = useProjects()
 
     function languageChange() {
@@ -29,6 +31,8 @@ export function LanguageProvider({children}) {
             setReview(reviewEN)
             setAudio(audioEN)
             setBot(botEN)
+            setTrippie(trippieEN)
+            setStage(stageEN)
         } else {
             setLanguage("NL")
             setHome(homeNL)
@@ -39,6 +43,8 @@ export function LanguageProvider({children}) {
             setReview(reviewNL)
             setAudio(audioNL)
             setBot(botNL)
+            setTrippie(trippieNL)
+            setStage(stageNL)
         }
     }
 

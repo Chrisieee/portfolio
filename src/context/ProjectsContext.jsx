@@ -85,8 +85,8 @@ export function ProjectsProvider({children}) {
         details2: "Tijdens dit project heb ik me vooral gewerkt aan de overzicht pagina van de verschillende reis mogelijkheden en de details van de reis. Hierbij heb ik opgelet dat niet alle informatie gelijk zichtbaar is, maar dat bijvoorbeeld alle tussen stations in en uitklapbaar zijn. Ook kan je elke trein in en uitklappen. Bij dit project heb ik met verschillende nieuwe dingen gewerkt zo heb ik voor het eerst de NS api gebruikt om alle informatie op te halen en de google api om foto's van de stations toe te voegen.",
     }
     const trippieEN = {
-        details1: "",
-        details2: "",
+        details1: "This was a project where we worked in groups to make a solution for a target group with a disability. Our target group was people with a mild intellectual disability and we needed to find a solution for traveling. During the interviews we did we found out that apps like 9292 and the NS app are unclear for a lot of people in this group so we started working with that.",
+        details2: "During this project I mostly focused on making the overview page where the different traveling options are shown and the detailed view. I made sure that there wouldn't be to much information shown at ones. For example all the stations the train will stop are not visible at the start, but you can click to view them all. With this project I learned a lot of new things for example I worked with the NS api to get all the information. I also used the google api for the pictures of the stations.",
     }
     const [trippie, setTrippie] = useState(trippieNL)
 
@@ -95,8 +95,8 @@ export function ProjectsProvider({children}) {
         details2: "Tijdens dit project heb ik een aantal nieuwe dingen geleerd en gebruikt. Zo hadden we als front-end team de keuze gemaakt om typescript te gebruiken, maar ook Tanstack router/form/query, Zod en nog een aantal nieuwe dingen. Dit was even wennen voor mij, maar ook wel heel leerzaam. Ook was dit de eerste keer dat we met een los back-end en front-end team werkte wat ook even wennen was. Ik ben erg blij met het product wat we hebben gebouwd al waren er zeker nog dingen die we toe hadden willen voegen.",
     }
     const stageEN = {
-        details1: "",
-        details2: "",
+        details1: "This was a project where we worked in groups with a case. Our group where given a case where we needed to create a platform where we linked students to internship assignments with a AI algorithm. We where split in a back-end team and a front-end team. I was part of the front-end team and made the pages standing on this page.",
+        details2: "During this project I learned a lot of new things. We made the choose to work with typescript, but also with Tanstack router/form/query, Zod and some other new things. This took some time getting used to, but I learned a lot during this project. This also was the first time we worked with a split back-end and front-end team so that als took some time to get used to. I am very happy with the end result we build, but we also had a lot of things we wanted to add.",
     }
     const [stage, setStage] = useState(stageNL)
 
