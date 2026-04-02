@@ -31,6 +31,10 @@ function FrontEnd() {
                 <td className={"w-8/9"}>React</td>
             </tr>
             <tr>
+                <td><i className="fa-regular fa-file-code"></i></td>
+                <td className={"w-8/9"}>Typescript</td>
+            </tr>
+            <tr>
                 <td><i className="fa-brands fa-react"></i></td>
                 <td className={"w-8/9"}>React Native</td>
             </tr>

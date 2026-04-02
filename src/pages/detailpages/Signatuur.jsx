@@ -30,7 +30,7 @@ function Signatuur() {
                         src={foto} alt="foto signatuur"/>
 
             <motion.article variants={itemVariants}
-                            className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 md:col-span-1 row-span-1"}>
                 <h2 className={"text-3xl font-heading pb-2"}>Signatuur (solo)</h2>
                 <p>08-01-2026 - 16-01-2026</p>
                 <p className={"text-sm"}>{sign.details1}</p>
@@ -38,7 +38,7 @@ function Signatuur() {
             </motion.article>
 
             <motion.article variants={itemVariants}
-                            className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 row-span-1 flex flex-col gap-4 justify-between"}>
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-2 md:col-span-1 row-span-1 flex md:flex-col gap-4 justify-between"}>
                 <div>
                     <h3 className={"text-2xl font-heading pb-2"}>{language === "NL" ? "Tools & talen:" : "Tools & languages:"}</h3>
                     <table className={"w-full"}>

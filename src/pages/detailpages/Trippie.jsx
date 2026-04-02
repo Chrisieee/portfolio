@@ -31,7 +31,7 @@ function Trippie() {
                         src={foto} alt="foto Trippie"/>
 
             <motion.article variants={itemVariants}
-                            className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 md:col-span-1 row-span-1"}>
                 <H2 className={"text-3xl font-heading pb-2"}>Trippie (team)</H2>
                 <p>09-04-2025 - 24-05-2025</p>
                 <p className={"text-sm"}>{trippie.details1}</p>
@@ -39,7 +39,7 @@ function Trippie() {
             </motion.article>
 
             <motion.article variants={itemVariants}
-                            className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 row-span-1 flex flex-col gap-4 justify-between"}>
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-2 md:col-span-1 row-span-1 flex md:flex-col gap-4 justify-between"}>
                 <div>
                     <H3 className={"text-2xl font-heading pb-2"}>{language === "NL" ? "Tools & talen:" : "Tools & languages:"}</H3>
                     <table className={"w-full"}>

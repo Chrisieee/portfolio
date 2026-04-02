@@ -31,7 +31,7 @@ function StageLink() {
                         src={foto} alt="foto stagelink"/>
 
             <motion.article variants={itemVariants}
-                            className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 md:col-span-1 row-span-1"}>
                 <H2 className={"text-3xl font-heading pb-2"}>StageLink (team)</H2>
                 <p>02-03-2025 - 19-03-2025</p>
                 <p className={"text-sm"}>{stage.details1}</p>
@@ -39,7 +39,7 @@ function StageLink() {
             </motion.article>
 
             <motion.article variants={itemVariants}
-                            className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 row-span-1 flex flex-col gap-4 justify-between"}>
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-2 md:col-span-1 row-span-1 flex md:flex-col gap-4 justify-between"}>
                 <div>
                     <H3 className={"text-2xl font-heading pb-2"}>{language === "NL" ? "Tools & talen:" : "Tools & languages:"}</H3>
                     <table className={"w-full"}>
@@ -59,6 +59,14 @@ function StageLink() {
                         <tr>
                             <td><i className="fa-regular fa-file-code"></i></td>
                             <td className={"w-8/9"}>Chart.js</td>
+                        </tr>
+                        <tr>
+                            <td><i className="fa-regular fa-file-code"></i></td>
+                            <td className={"w-8/9"}>Tanstack</td>
+                        </tr>
+                        <tr>
+                            <td><i className="fa-regular fa-file-code"></i></td>
+                            <td className={"w-8/9"}>Zod</td>
                         </tr>
                         </tbody>
                     </table>

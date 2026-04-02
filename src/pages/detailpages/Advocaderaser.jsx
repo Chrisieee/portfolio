@@ -26,11 +26,11 @@ function Advocaderaser() {
                     transition={{duration: 0.2}}
                     initial="hidden" animate="show">
             <motion.img layoutId="project-1-image" variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-left rounded-xl col-span-2 row-span-1"}
+                        className={"border shadow-lg h-full w-full object-cover object-left rounded-xl col-span-2 row-span-1"}
                         src={foto} alt="foto advocaderaser"/>
 
             <motion.article variants={itemVariants}
-                            className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-1 row-span-1"}>
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 md:col-span-1 row-span-1"}>
                 <h2 className={"text-3xl font-heading pb-2"}>Advocaderaser (solo)</h2>
                 <p>06-05-2026 - 04-06-2025</p>
                 <p className={"text-sm"}>{advo.details1}</p>
@@ -39,7 +39,7 @@ function Advocaderaser() {
             </motion.article>
 
             <motion.article variants={itemVariants}
-                            className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-1 row-span-1 flex flex-col gap-4 justify-between"}>
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-2 md:col-span-1 row-span-1 flex md:flex-col gap-4 justify-between"}>
                 <div>
                     <h3 className={"text-2xl font-heading pb-2"}>{language === "NL" ? "Tools & talen:" : "Tools & languages:"}</h3>
                     <table className={"w-full"}>

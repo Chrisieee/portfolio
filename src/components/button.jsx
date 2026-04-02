@@ -31,7 +31,7 @@ export function LiveButton({link}) {
 export function GitButton({children, link}) {
     return (
         <Link
-            className="p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300 hover:scale-105 flex-1"
+            className="p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300 hover:scale-105 md:flex-1"
             to={link} target="_blank">
             <i className="fa-brands fa-github"></i>{children}</Link>
     )
