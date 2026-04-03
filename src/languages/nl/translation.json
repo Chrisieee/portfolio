@@ -1,0 +1,74 @@
+{
+  "home": {
+    "quote": "Je leert het meest als je uit je comfort zone stapt.",
+    "quoteInfo": "Uitdaging aangaan vind ik het engst en het leukst om te doen. Je leert er een hoop van als je nieuwe dingen probeert.",
+    "projects": "Uitgelichte projecten:",
+    "contact1": "Vragen?",
+    "contact2": "Neem contact op:",
+    "bioTitle": "Wie is Christa",
+    "bio": "Ik ben Christa, 25 jaar oud en ik studeer Creatieve Media & Game Technologies. Het leukste vind ik het kunnen uitwerken van de creatieve ideeën die ik heb in iets wat technisch ook werkt. Programmeren is grotendeels logisch nadenken en ik vind het erg leuk om uiteindelijk het eind resultaat te kunnen bekijken en te bedenken dat het me gewoon gelukt is. Met elk project probeer ik nieuwe dingen uit en ontdek ik mezelf verder."
+  },
+  "about": {
+    "bioTitle": "Wie is Christa",
+    "bio": "Ik ben Christa, 25 jaar oud en ik studeer Creatieve Media & Game Technologies. Het leukste vind ik het kunnen uitwerken van de creatieve ideeën die ik heb in iets wat technisch ook werkt. Programmeren is grotendeels logisch nadenken en ik vind het erg leuk om uiteindelijk het eind resultaat te kunnen bekijken en te bedenken dat het me gewoon gelukt is. Met elk project probeer ik nieuwe dingen uit en ontdek ik mezelf verder.",
+    "hobby": "Vrije tijd",
+    "hobbyInfo": "In mijn vrije tijd vind ik het super leuk om creatief bezig te zijn. Ik ben altijd wel bezig met een projectje denk hierbij aan foto's maken, designen, video's maken of programmeer projectjes. Ik houd ervan om mooie dingen te maken en mezelf uit te dagen met verschillende dingen.",
+    "internship": "Stage",
+    "internshipInfo": "Op een stage zou ik mezelf willen uitdagen om dingen te proberen en maken die ik nog nooit heb gedaan. Graag wil ik ontdekken wat er allemaal mogelijk is op het gebied van programmeren. Ik heb een lichte voorkeur voor front-end, omdat ik de visuele feedback die je hierbij krijgt heel fijn vind. Maar ik vind het ook leuk om te ontdekken wat er nog meer is.",
+    "experience": "Stage",
+    "basic": "Basis"
+  },
+  "projects": {
+    "main": {
+      "title": "Projecten",
+      "date": "Heden",
+      "advoInfo": "Voor dit project heb ik een simpele platformer gemaakt in de Excalibur game engine. Dit was een project die ik heb gemaakt voor school.",
+      "signTitle": "Signatuur game",
+      "signInfo": "Dit was een project waar je een eigen vorm mocht kiezen om je groei te laten zien. Ik heb hiervoor een simpele platformer gemaakt met verschillende werelden en levels.",
+      "reviewInfo": "Dit was een full stack project van school. Hierbij moesten we de front-end en de back-end zelf maken. Dit heb ik gedaan met React voor de front-end en Express voor de back-end.",
+      "audioInfo": "Dit was een projectje wat ik voor de lol heb gedaan. Ik wou iets maken wat Audio visueel zou maken. Dit heb ik gedaan met de Audio API.",
+      "discordInfo": "Dit is een project waar ik nog mee bezig ben. Ik ben een eigen discord bot aan het bouwen voor onder andere twitch & youtube meldingen.",
+      "trippieInfo": "Dit was een project waar we iets moesten maken waardoor reizen met het OV makkelijker werd voor iemand met een LVB. We hebben eigenlijk een versimpelde versie van de NS app gemaakt.",
+      "stageInfo": "Dit was een project waar we een platform moesten maken voor studenten waarbij studenten aan stageopdrachten worden gekoppeld met een matchscore die gemaakt werd door een AI.",
+      "advoGodotInfo": ""
+    },
+    "advo": {
+      "details1": "Dit was een school project waar we voor het eerst een game hebben gemaakt. Ik heb hier Excalibur voor moeten gebruiken, omdat dit met Javascript werkt. Ook was dit de eerste ervaring met OOP programmeren.",
+      "details2": "Ik heb de keuze gemaakt om de controls ook voor controller te maken, omdat ik dit een leuke extra uitdaging vond.",
+      "details3": "Als ik er nu op terug kijk ben ik met het meeste wel blij vooral, omdat dit de eerste keer was. Maar ik had bijvoorbeeld de score tekst niet transparant gemaakt. Ook zou ik meer levels hebben gemaakt als ik terug in de tijd zou kunnen. Dit is een project wat ik nog in Godot wil gaan uitwerken."
+    },
+    "sign": {
+      "details1": "Voor dit project moesten iets maken waarbij we onze groei aantoonde die we hadden doormaakt in het afgelopen halfjaar. Hiervoor waren we vrij om een vorm te kiezen en mij leek het een leuke uitdaging om een game te maken. Aangezien ik ervaring had met excalibur heb ik ervoor gekozen om hem hier mee te maken.",
+      "details2": "Als ik er nu op terug kijk ben ik middelmatig blij. Ik ben blij dat ik hem af heb kunnen krijgen en dat hij is geworden wat ik voor ogen had. Ik had wel de levels wat uitdagender en leuker te maken. Zo had ik bij de tweede wereld een nieuwe mechanic kunnen toevoegen dat had het al wat leuker gemaakt."
+    },
+    "review": {
+      "details1": "Dit was een full stack project op school. We moesten de back-end schrijven met Express met een MongoDB database. De front-end is gemaakt met React.",
+      "details2": "Ik heb best wel wat dingen gedaan die ik nog nooit gedaan heb. Zo had ik nog nooit met Express JS, MongoBD en mongoose gewerkt. Ook was React nieuw voor mij. Daarnaast ben ik de uitdaging aangegaan om veel extra onderdelen toe te voegen. Denk aan pagination, filteren en het werken met relaties in de database."
+    },
+    "audio": {
+      "details1": "Dit is een project wat ik heb gedaan, omdat het me leuk leek om iets te maken wat audio visueel maakt. Hiervoor ben ik aan de slag gegaan met de Audio API. Voor de styling wou ik eerst met normaal CSS werken, maar uiteindelijk besloot ik het toch met tailwind te doen. Dit omdat ik merk dat ik nu ik tailwind wat beter begrijp ik hier sneller mee werk.",
+      "details2": "Ik heb de keuze gemaakt om twee keer de cirkel naast elkaar te zetten, omdat het me leuk leek om te spelen met het spiegelen van de animatie. Bij de rechter heb ik ook wat gespeeld met een soort glitch effect toe te voegen als er een grote bass is. Dit geeft best wel een cool effect."
+    },
+    "discord": {
+      "details1": "Dit is een Work in Progress project. Ik ben een eigen discord bot aan het bouwen, omdat ik een beetje gek word van alle verschillende bots die ik in mijn server heb. Hierom ben ik bezig met een all in one discord bot te bouwen.",
+      "details2": "Ik ben begonnen met een simpele melding als ik live ben op mijn kanaal. Dit heb ik gedaan met de Twitch API, omdat je daarin request kan doen naar de server om te checken of een kanaal live is. Daarna ben ik gaan spelen om deze melding met een embedded message te maken."
+    },
+    "trippie": {
+      "details1": "Dit was een project waarbij we in groepjes een oplossing moesten vinden voor een doelgroep met een beperking. Onze doelgroep was hierbij mensen met een LVB en de situatie waar we een oplossing voor moesten vinden was reizen met het OV. Uiteindelijk kwamen we met interviewen en testen op dat apps zoals de 9292 en NS app te onduidelijk zijn en hier zijn we mee aan de slag gegaan.",
+      "details2": "Tijdens dit project heb ik me vooral gewerkt aan de overzicht pagina van de verschillende reis mogelijkheden en de details van de reis. Hierbij heb ik opgelet dat niet alle informatie gelijk zichtbaar is, maar dat bijvoorbeeld alle tussen stations in en uitklapbaar zijn. Ook kan je elke trein in en uitklappen. Bij dit project heb ik met verschillende nieuwe dingen gewerkt zo heb ik voor het eerst de NS api gebruikt om alle informatie op te halen en de google api om foto's van de stations toe te voegen."
+    },
+    "stage": {
+      "details1": "Dit was een project waarbij we in groepjes een product bij een casus moesten maken. Onze groep had een casus waarbij we een platform moesten bouwen om studenten te koppelen aan stageopdrachten doormiddel van een AI algoritme. We waren hierbij opgedeeld in een back-end en front-end team. Ik zat zelf in het front-end team en heb de pagina's die hiernaast en hieronder staan gemaakt.",
+      "details2": "Tijdens dit project heb ik een aantal nieuwe dingen geleerd en gebruikt. Zo hadden we als front-end team de keuze gemaakt om typescript te gebruiken, maar ook Tanstack router/form/query, Zod en nog een aantal nieuwe dingen. Dit was even wennen voor mij, maar ook wel heel leerzaam. Ook was dit de eerste keer dat we met een los back-end en front-end team werkte wat ook even wennen was. Ik ben erg blij met het product wat we hebben gebouwd al waren er zeker nog dingen die we toe hadden willen voegen."
+    },
+    "advoGodot": {
+      "details1": "",
+      "details2": ""
+    }
+  },
+  "ui": {
+    "infoButton": "Meer informatie",
+    "tools": "Tools & talen:"
+  },
+  "error": "Pagina niet gevonden"
+}

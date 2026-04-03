@@ -3,22 +3,20 @@ import foto2 from '../../images/sign/Sign1.png'
 import foto3 from '../../images/sign/Sign2.png'
 import foto4 from '../../images/sign/Sign3.png'
 import foto5 from '../../images/sign/Sign4.png'
-import {useProjects} from "../../context/ProjectsContext.jsx";
-import {useLanguage} from "../../context/Language.jsx";
 import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {GitButton, LiveButton} from "../../components/button.jsx";
 import {useEffect} from "react";
 import ProjectImg from "../../components/projectImg.jsx";
+import {useTranslation} from "react-i18next";
 
 function Signatuur() {
-    const {sign} = useProjects()
-    const {language} = useLanguage()
+    const {t} = useTranslation()
     const {containerVariants, itemVariants} = useAnimate()
 
     useEffect(() => {
-        document.title = `Christa | ${language === "NL" ? "Signatuur project" : "Signature project"}`
-    }, [language])
+        document.title = `Christa | ${t("projects.main.signTitle")}`
+    }, [])
 
     return (
         <motion.section layoutId="project-2" className={"mx-4 grid grid-cols-2 md:grid-cols-4 gap-4 h-full"}
@@ -26,21 +24,21 @@ function Signatuur() {
                         exit={{opacity: 0}}
                         transition={{duration: 0.2}}>
             <motion.img layoutId="project-2-image" variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-left rounded-xl col-span-2 row-span-1"}
+                        className={"border shadow-lg h-full w-full object-cover object-left rounded-xl col-span-2 row-span-1"}
                         src={foto} alt="foto signatuur"/>
 
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 md:col-span-1 row-span-1"}>
-                <h2 className={"text-3xl font-heading pb-2"}>Signatuur (solo)</h2>
+                <h2 className={"text-3xl font-heading pb-2"}>{t("projects.main.signTitle")} (solo)</h2>
                 <p>08-01-2026 - 16-01-2026</p>
-                <p className={"text-sm"}>{sign.details1}</p>
-                <p className={"text-sm pt-2"}>{sign.details2}</p>
+                <p className={"text-sm"}>{t("projects.sign.details1")}</p>
+                <p className={"text-sm pt-2"}>{t("projects.sign.details2")}</p>
             </motion.article>
 
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-2 md:col-span-1 row-span-1 flex md:flex-col gap-4 justify-between"}>
                 <div>
-                    <h3 className={"text-2xl font-heading pb-2"}>{language === "NL" ? "Tools & talen:" : "Tools & languages:"}</h3>
+                    <h3 className={"text-2xl font-heading pb-2"}>{t("ui.tools")}</h3>
                     <table className={"w-full"}>
                         <tbody className={"text-lg"}>
                         <tr>

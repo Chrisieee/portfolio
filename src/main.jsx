@@ -4,25 +4,16 @@ import './index.css'
 import App from './App.jsx'
 import {LanguageProvider} from "./context/Language.jsx";
 import {HashRouter} from "react-router";
-import {AboutProvider} from "./context/AboutContext.jsx";
-import {HomeProvider} from "./context/HomeContext.jsx";
-import {ProjectsProvider} from "./context/ProjectsContext.jsx";
 import {AnimateProvider} from "./context/AnimationContext.jsx";
 
 createRoot(document.getElementById('root')).render(
     <HashRouter>
-        <HomeProvider>
-            <AboutProvider>
-                <ProjectsProvider>
-                    <LanguageProvider>
-                        <AnimateProvider>
-                            <StrictMode>
-                                <App/>
-                            </StrictMode>
-                        </AnimateProvider>
-                    </LanguageProvider>
-                </ProjectsProvider>
-            </AboutProvider>
-        </HomeProvider>
+        <LanguageProvider>
+            <AnimateProvider>
+                <StrictMode>
+                    <App/>
+                </StrictMode>
+            </AnimateProvider>
+        </LanguageProvider>
     </HashRouter>
 )

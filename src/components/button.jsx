@@ -1,6 +1,5 @@
 import {Link} from "react-router";
-import {useLanguage} from "../context/Language.jsx";
-import {useAbout} from "../context/AboutContext.jsx";
+import {useTranslation} from "react-i18next";
 
 export function Button({children, link}) {
     return (
@@ -11,11 +10,11 @@ export function Button({children, link}) {
 }
 
 export function InfoButton({link}) {
-    const {language} = useLanguage()
+    const {t} = useTranslation()
     return (
         <Link
             className="p-2 rounded-2xl border-2 bg-blue-400 border-blue-500 hover:bg-blue-500 hover:border-blue-300 hover:scale-105"
-            to={link}>{language === "NL" ? "Meer informatie" : "More information"}</Link>
+            to={link}>{t("ui.infoButton")}</Link>
     )
 }
 
@@ -47,12 +46,12 @@ export function ShowcaseButton({link}) {
 }
 
 export function CvButton() {
-    const {about} = useAbout()
+    const {t} = useTranslation()
     return (
         <a
             className="p-2 rounded-xl bg-blue-300 text-center border-2 border-blue-400 hover:bg-blue-400 hover:border-blue-300 hover:scale-105"
             href="/ChristaPol_CV_01-2026.pdf"
             download={"ChristaPol_CV_01-2026.pdf"}>Download
-            CV ({about.cv})</a>
+            CV (NL)</a>
     )
 }

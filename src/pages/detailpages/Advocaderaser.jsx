@@ -3,16 +3,16 @@ import foto2 from '../../images/advo/Advo1.png'
 import foto3 from '../../images/advo/Advo2.png'
 import foto4 from '../../images/advo/Advo3.png'
 import foto5 from '../../images/advo/Advo4.png'
-import {useProjects} from "../../context/ProjectsContext.jsx";
 import {useLanguage} from "../../context/Language.jsx";
 import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {GitButton, LiveButton} from "../../components/button.jsx";
 import {useEffect} from "react";
 import ProjectImg from "../../components/projectImg.jsx";
+import {useTranslation} from "react-i18next";
 
 function Advocaderaser() {
-    const {advo} = useProjects()
+    const {t} = useTranslation()
     const {language} = useLanguage()
     const {containerVariants, itemVariants} = useAnimate()
 
@@ -33,15 +33,15 @@ function Advocaderaser() {
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 md:col-span-1 row-span-1"}>
                 <h2 className={"text-3xl font-heading pb-2"}>Advocaderaser (solo)</h2>
                 <p>06-05-2026 - 04-06-2025</p>
-                <p className={"text-sm"}>{advo.details1}</p>
-                <p className={"text-sm pt-2"}>{advo.details2}</p>
-                <p className={"text-sm pt-2"}>{advo.details3}</p>
+                <p className={"text-sm"}>{t("projects.advo.details1")}</p>
+                <p className={"text-sm pt-2"}>{t("projects.advo.details2")}</p>
+                <p className={"text-sm pt-2"}>{t("projects.advo.details3")}</p>
             </motion.article>
 
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-2 md:col-span-1 row-span-1 flex md:flex-col gap-4 justify-between"}>
                 <div>
-                    <h3 className={"text-2xl font-heading pb-2"}>{language === "NL" ? "Tools & talen:" : "Tools & languages:"}</h3>
+                    <h3 className={"text-2xl font-heading pb-2"}>{t("ui.tools")}</h3>
                     <table className={"w-full"}>
                         <tbody className={"text-lg"}>
                         <tr>

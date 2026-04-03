@@ -1,7 +1,7 @@
-import {useAbout} from "../../context/AboutContext.jsx";
+import {useTranslation} from "react-i18next";
 
 function FrontEnd() {
-    const {about} = useAbout()
+    const {t} = useTranslation()
 
     return (
         <table className={"w-full"}>
@@ -40,11 +40,11 @@ function FrontEnd() {
             </tr>
             <tr className={"text-gray-700"}>
                 <td><i className="fa-brands fa-python"></i></td>
-                <td className={"w-8/9"}>{about.basic} Python</td>
+                <td className={"w-8/9"}>{t("about.basic")} Python</td>
             </tr>
             <tr className={"text-gray-700"}>
                 <td><i className="fa-regular fa-file-code"></i></td>
-                <td className={"w-8/9"}>{about.basic} C#</td>
+                <td className={"w-8/9"}>{t("about.basic")} C#</td>
             </tr>
             </tbody>
         </table>

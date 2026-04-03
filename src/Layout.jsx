@@ -1,4 +1,5 @@
 import './index.css'
+import "./context/i18n";
 import {Outlet} from "react-router";
 import Header from "./components/header.jsx";
 import {AnimatePresence, motion} from "framer-motion";

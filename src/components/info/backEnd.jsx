@@ -1,8 +1,4 @@
-import {useAbout} from "../../context/AboutContext.jsx";
-
 function BackEnd() {
-    const {about} = useAbout()
-
     return (
         <table className={"w-full"}>
             <tbody>

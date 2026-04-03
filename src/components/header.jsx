@@ -1,10 +1,12 @@
 import {Link} from "react-router";
 import {useLanguage} from "../context/Language.jsx";
 import {useState} from "react";
+import {useTranslation} from "react-i18next";
 
 function Header() {
     const {languageChange, language} = useLanguage()
     const [nav, setNav] = useState(false)
+
 
     return (
         <header
@@ -29,8 +31,11 @@ function Header() {
                             nav ? setNav(false) : setNav(true)
                         }} className={"text-2xl hover:text-blue-200"}
                               to={"/about-me"}>{language === "NL" ? "Over mij" : "About me"}</Link>
-                        <button className={"text-2xl hover:text-blue-200"}
-                                onClick={() => languageChange()}>{language === "NL" ? "EN" : "NL"}</button>
+                        {language === "NL" ?
+                            <button className={"text-2xl hover:text-blue-200"}
+                                    onClick={() => languageChange()}>NL</button> :
+                            <button className={"text-2xl hover:text-blue-200"}
+                                    onClick={() => languageChange()}>EN</button>}
                     </nav>
                 </div>
             </div>

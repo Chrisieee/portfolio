@@ -1,5 +1,4 @@
 import pf from "../images/christa.jpg";
-import {useAbout} from "../context/AboutContext.jsx";
 import {useAnimate} from "../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {H2, H3} from "../components/headings.jsx";
@@ -12,9 +11,10 @@ import Database from "../components/info/database.jsx";
 import {CvButton} from "../components/button.jsx";
 import {useEffect} from "react";
 import {useLanguage} from "../context/Language.jsx";
+import {useTranslation} from "react-i18next";
 
 function About() {
-    const {about} = useAbout()
+    const {t} = useTranslation()
     const {containerVariants, itemVariants} = useAnimate()
     const {language} = useLanguage()
 
@@ -31,12 +31,12 @@ function About() {
 
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-2 col-span-2 row-span-3"}>
-                <H2>{about.bio}</H2>
-                <p>{about.bioInfo}</p>
-                <H3>{about.hobby}</H3>
-                <p>{about.hobbyInfo}</p>
-                <H3>{about.stage}</H3>
-                <p>{about.stageInfo}</p>
+                <H2>{t("about.bioTitle")}</H2>
+                <p>{t("about.bio")}</p>
+                <H3>{t("about.hobby")}</H3>
+                <p>{t("about.hobbyInfo")}</p>
+                <H3>{t("about.internship")}</H3>
+                <p>{t("about.internshipInfo")}</p>
             </motion.article>
 
             <motion.article variants={itemVariants}
@@ -50,7 +50,7 @@ function About() {
 
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-4 col-span-2 content-center text-center"}>
-                <H2>{about.experience}</H2>
+                <H2>{t("about.experience")}</H2>
             </motion.article>
 
             <motion.article variants={itemVariants}

@@ -1,4 +1,3 @@
-import {useProjects} from "../context/ProjectsContext.jsx";
 import {useAnimate} from "../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {H2} from "../components/headings.jsx";
@@ -9,14 +8,15 @@ import {
     TrippieCard,
     StagelinkCard
 } from "../components/schoolProjects.jsx";
-import {AudioCard, DiscordbotCard} from "../components/funProjects.jsx";
+import {AdvoCard, AudioCard, DiscordbotCard} from "../components/funProjects.jsx";
 import {useEffect} from "react";
 import {useLanguage} from "../context/Language.jsx";
+import {useTranslation} from "react-i18next";
 
 function Projects() {
-    const {project} = useProjects()
     const {containerVariants, itemVariants} = useAnimate()
     const {language} = useLanguage()
+    const {t} = useTranslation()
 
     useEffect(() => {
         document.title = `Christa | ${language === "NL" ? "Projecten" : "Projects"}`
@@ -28,16 +28,17 @@ function Projects() {
             <motion.section
                 variants={itemVariants}
                 className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-3 xl:col-span-4 sm:col-span-2 col-span-1 content-center text-center"}>
-                <H2>{project.title} fun</H2>
+                <H2>{t("projects.main.title")} fun</H2>
             </motion.section>
 
+            {/*<AdvoCard/>*/}
             <DiscordbotCard/>
             <AudioCard/>
 
             <motion.section
                 variants={itemVariants}
                 className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-3 xl:col-span-4 col-span-1 sm:col-span-2 content-center text-center"}>
-                <H2>{project.title} school</H2>
+                <H2>{t("projects.main.title")} school</H2>
             </motion.section>
 
             <StagelinkCard/>

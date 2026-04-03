@@ -5,16 +5,14 @@ import foto4 from '../../images/full/Full3.png'
 import foto5 from '../../images/full/Full4.png'
 import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
-import {useProjects} from "../../context/ProjectsContext.jsx";
-import {useLanguage} from "../../context/Language.jsx";
 import {GitButton} from "../../components/button.jsx";
 import {useEffect} from "react";
 import ProjectImg from "../../components/projectImg.jsx";
+import {useTranslation} from "react-i18next";
 
 function Gamereviews() {
     const {containerVariants, itemVariants} = useAnimate()
-    const {review} = useProjects()
-    const {language} = useLanguage()
+    const {t} = useTranslation()
 
     useEffect(() => {
         document.title = `Christa | Gamereview project`
@@ -25,21 +23,21 @@ function Gamereviews() {
                     variants={containerVariants} initial="hidden" animate="show" layout="position" exit={{opacity: 0}}
                     transition={{duration: 0.2}}>
             <motion.img layoutId="project-3-image" variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-2 row-span-1"}
+                        className={"border shadow-lg h-full w-full object-cover object-center rounded-xl col-span-2 row-span-1"}
                         src={foto} alt="foto advocaderaser"/>
 
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 md:col-span-1 row-span-1"}>
                 <h2 className={"text-3xl font-heading pb-2"}>Gamereviews (solo)</h2>
                 <p>19-01-2026 - 27-01-2026</p>
-                <p className={"text-sm"}>{review.details1}</p>
-                <p className={"text-sm pt-2"}>{review.details2}</p>
+                <p className={"text-sm"}>{t("projects.review.details1")}</p>
+                <p className={"text-sm pt-2"}>{t("projects.review.details2")}</p>
             </motion.article>
 
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-2 md:col-span-1 row-span-1 flex md:flex-col gap-4 justify-between"}>
                 <div>
-                    <h3 className={"text-2xl font-heading pb-2"}>{language === "NL" ? "Tools & talen:" : "Tools & languages:"}</h3>
+                    <h3 className={"text-2xl font-heading pb-2"}>{t("ui.tools")}</h3>
                     <table className={"w-full"}>
                         <tbody className={"text-lg"}>
                         <tr>

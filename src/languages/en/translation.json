@@ -1,0 +1,74 @@
+{
+  "home": {
+    "quote": "You learn a lot when you come out of your comfort zone.",
+    "quoteInfo": "Taking on challenges is one of the scariest and funnest things to do in my opinion. You can learn a lot from trying new things.",
+    "projects": "Highlighted projects:",
+    "contact1": "Questions?",
+    "contact2": "Please contact me:",
+    "bioTitle": "Who is Christa",
+    "bio": "I am Christa, 25 years old and I studie Creatieve Media & Game Technologies. The thing I love the most is the fact I can create my creative ideas and bring them to life with programing. Programming contains a lot of logical thinking and I love to look and the end result and think I did this. With every project I try to reinvent myself and try new things."
+  },
+  "about": {
+    "bioTitle": "Who is Christa",
+    "bio": "I am Christa, 25 years old and I studie Creatieve Media & Game Technologies. The thing I love the most is the fact I can create my creative ideas and bring them to life with programing. Programming contains a lot of logical thinking and I love to look and the end result and think I did this. With every project I try to reinvent myself and try new things.",
+    "hobby": "Spare time",
+    "hobbyInfo": "In my spare time I enjoy being creative. I am always working on a project think of making photos. designing, creating videos or programming projects. I love to create nice things and challenging myself with different things.",
+    "internship": "Internship",
+    "internshipInfo": "On my internship I want to challenge myself with trying things I have never done. I want to explore the possibilities of programming. I have a mild preference for front-end because I love the visual feedback you get. But I love to explore different aspects of programming as well.",
+    "experience": "Experience",
+    "basic": "Basic"
+  },
+  "projects": {
+    "main": {
+      "title": "Projects",
+      "date": "Present",
+      "advoInfo": "I made a simple platformer game for this project. I made this in the Excalibur game engine. This was a project I made for school.",
+      "signTitle": "Signature game",
+      "signInfo": "We had the change to choice our own methode to show our grow. I choose to make a game for this project with different levels and worlds.",
+      "reviewInfo": "This is a full stack project from school. We needed to make the back-end and front-end ourselves. I made the front-end with React and the back-end with Express.",
+      "audioInfo": "I made this project for fun. I wanted to make something that made audio something visual. I made this using the Audio API.",
+      "discordInfo": "This is a work in progress project. I am making my own discord bot to give twitch and youtube alerts in a server.",
+      "trippieInfo": "For this project we needed to make something to make traveling with train easer for someone with a intellectual disability. We sort of made a easier version of the NS app.",
+      "stageInfo": "For this project we needed to make a platform for students. On this platform students got matched with internships with a matchscore made with a AI.",
+      "advoGodotInfo": ""
+    },
+    "advo": {
+      "details1": "This was a project for school. We needed to make our first game. I needed to use Excalibur for this, because that works with Javascript. This was my fist experience with OOP programming.",
+      "details2": "I made the choice to also make it for controller, because I thought that would be a fun extra challenge.",
+      "details3": "If I look back at this game I am pretty happy with the game, because it was the first time making something like this. But if I would make it again I would make the score text less transparant. I would also make more levels if I would have had the time. This is a project that I want to build on to and work out to a total game in Godot."
+    },
+    "sign": {
+      "details1": "I needed to make something that show the grow I made in the last semester. We were free to choose our own methode to show this and I chose to make a game for this, because I thought that would be a fun challenge. And because I had experience in Excalibur I chose to make it with that.",
+      "details2": "If I look back om this project I am kinda happy but I could have done better. I am happy I finished it and that it is wat I wanted to make. But I would have wanted to make the levels more challenging and fun. I wanted to add a new mechanic in the second world to make it more fun."
+    },
+    "review": {
+      "details1": "This was a full stack project for school. We needed to make the back-end with Express with a MongoDB database. The front-end is made with React.",
+      "details2": "With this project I did a lot of things I never tried. For example I had never worked with Express JS, MongoDB or mongoose. React was also new for me. I also challenged myself to add a lot of extra elements than were needed. Think about pagination, filtering and working with relationships in the database."
+    },
+    "audio": {
+      "details1": "I did this project, because I thought it would be fun to make audio into something visual. I used the Audio API for this. For the styling I wanted to use normal CSS but I choose to use tailwind in the end. This because I am noticing I am working faster with tailwind now I understand it better.",
+      "details2": "I made the choose to put the circle twice next to each other, because I thought it would be fun to play with the mirroring of the animation. On the right one I also played with adding a sort of glitch effect when there is a bass. I think this gives a cool effect."
+    },
+    "discord": {
+      "details1": "This project is still a Work in Progress. I am working on making my own discord bot, because I am annoyed at al the different bots I have in my server. This is why I am working on making a all in one discord bot.",
+      "details2": "I started with a simple alert for when I am live on my channel. I did this with the Twitch API, because you can doe request in there to check if the channel is live. After this worked I started playing with a embedded message."
+    },
+    "trippie": {
+      "details1": "This was a project where we worked in groups to make a solution for a target group with a disability. Our target group was people with a mild intellectual disability and we needed to find a solution for traveling. During the interviews we did we found out that apps like 9292 and the NS app are unclear for a lot of people in this group so we started working with that.",
+      "details2": "During this project I mostly focused on making the overview page where the different traveling options are shown and the detailed view. I made sure that there wouldn't be to much information shown at ones. For example all the stations the train will stop are not visible at the start, but you can click to view them all. With this project I learned a lot of new things for example I worked with the NS api to get all the information. I also used the google api for the pictures of the stations."
+    },
+    "stage": {
+      "details1": "This was a project where we worked in groups with a case. Our group where given a case where we needed to create a platform where we linked students to internship assignments with a AI algorithm. We where split in a back-end team and a front-end team. I was part of the front-end team and made the pages standing on this page.",
+      "details2": "During this project I learned a lot of new things. We made the choose to work with typescript, but also with Tanstack router/form/query, Zod and some other new things. This took some time getting used to, but I learned a lot during this project. This also was the first time we worked with a split back-end and front-end team so that als took some time to get used to. I am very happy with the end result we build, but we also had a lot of things we wanted to add."
+    },
+    "advoGodot": {
+      "details1": "",
+      "details2": ""
+    }
+  },
+  "ui": {
+    "infoButton": "More information",
+    "tools": "Tools & languages:"
+  },
+  "error": "Page not found"
+}

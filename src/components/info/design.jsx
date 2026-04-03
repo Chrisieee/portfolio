@@ -1,7 +1,7 @@
-import {useAbout} from "../../context/AboutContext.jsx";
+import {useTranslation} from "react-i18next";
 
 function Design() {
-    const {about} = useAbout()
+    const {t} = useTranslation()
 
     return (
         <table className={"w-full"}>
@@ -40,7 +40,11 @@ function Design() {
             </tr>
             <tr className={"text-gray-700"}>
                 <td><i className="fa-solid fa-cube"></i></td>
-                <td className={"w-8/9"}>{about.basic} Unreal</td>
+                <td className={"w-8/9"}>{t("about.basic")} Unreal</td>
+            </tr>
+            <tr className={"text-gray-700"}>
+                <td><i className="fa-solid fa-cube"></i></td>
+                <td className={"w-8/9"}>{t("about.basic")} Godot</td>
             </tr>
             </tbody>
         </table>

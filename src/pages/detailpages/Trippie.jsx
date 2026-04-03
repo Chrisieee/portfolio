@@ -3,18 +3,16 @@ import foto2 from '../../images/trippie/Trippie1.png'
 import foto3 from '../../images/trippie/Trippie2.png'
 import foto4 from '../../images/trippie/Trippie3.png'
 import foto5 from '../../images/trippie/Trippie4.png'
-import {useProjects} from "../../context/ProjectsContext.jsx";
-import {useLanguage} from "../../context/Language.jsx";
 import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
 import {LiveButton} from "../../components/button.jsx";
 import {H2, H3} from "../../components/headings.jsx";
 import {useEffect} from "react";
 import ProjectImg from "../../components/projectImg.jsx";
+import {useTranslation} from "react-i18next";
 
 function Trippie() {
-    const {trippie} = useProjects()
-    const {language} = useLanguage()
+    const {t} = useTranslation()
     const {containerVariants, itemVariants} = useAnimate()
 
     useEffect(() => {
@@ -27,21 +25,21 @@ function Trippie() {
                         exit={{opacity: 0}}
                         transition={{duration: 0.2}}>
             <motion.img layoutId="project-6-image" variants={itemVariants}
-                        className={"border-1 shadow-lg h-full w-full object-cover object-center rounded-xl col-span-2 row-span-1"}
+                        className={"border shadow-lg h-full w-full object-cover object-center rounded-xl col-span-2 row-span-1"}
                         src={foto} alt="foto Trippie"/>
 
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-400 col-span-2 md:col-span-1 row-span-1"}>
                 <H2 className={"text-3xl font-heading pb-2"}>Trippie (team)</H2>
                 <p>09-04-2025 - 24-05-2025</p>
-                <p className={"text-sm"}>{trippie.details1}</p>
-                <p className={"text-sm pt-2"}>{trippie.details2}</p>
+                <p className={"text-sm"}>{t("projects.trippie.details1")}</p>
+                <p className={"text-sm pt-2"}>{t("projects.trippie.details2")}</p>
             </motion.article>
 
             <motion.article variants={itemVariants}
                             className={"shadow-lg rounded-2xl p-4 bg-blue-300 col-span-2 md:col-span-1 row-span-1 flex md:flex-col gap-4 justify-between"}>
                 <div>
-                    <H3 className={"text-2xl font-heading pb-2"}>{language === "NL" ? "Tools & talen:" : "Tools & languages:"}</H3>
+                    <H3 className={"text-2xl font-heading pb-2"}>{t("ui.tools")}</H3>
                     <table className={"w-full"}>
                         <tbody className={"text-lg"}>
                         <tr>
