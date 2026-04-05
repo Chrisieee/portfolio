@@ -30,7 +30,7 @@
       "discordInfo": "Dit is een project waar ik nog mee bezig ben. Ik ben een eigen discord bot aan het bouwen voor onder andere twitch & youtube meldingen.",
       "trippieInfo": "Dit was een project waar we iets moesten maken waardoor reizen met het OV makkelijker werd voor iemand met een LVB. We hebben eigenlijk een versimpelde versie van de NS app gemaakt.",
       "stageInfo": "Dit was een project waar we een platform moesten maken voor studenten waarbij studenten aan stageopdrachten worden gekoppeld met een matchscore die gemaakt werd door een AI.",
-      "advoGodotInfo": ""
+      "advoGodotInfo": "Dit is een project waar ik nog mee bezig ben. Ik ben bezig met mijn game idee uitwerken in Godot. Het word een soort puzzel platformer."
     },
     "advo": {
       "details1": "Dit was een school project waar we voor het eerst een game hebben gemaakt. Ik heb hier Excalibur voor moeten gebruiken, omdat dit met Javascript werkt. Ook was dit de eerste ervaring met OOP programmeren.",
@@ -62,8 +62,8 @@
       "details2": "Tijdens dit project heb ik een aantal nieuwe dingen geleerd en gebruikt. Zo hadden we als front-end team de keuze gemaakt om typescript te gebruiken, maar ook Tanstack router/form/query, Zod en nog een aantal nieuwe dingen. Dit was even wennen voor mij, maar ook wel heel leerzaam. Ook was dit de eerste keer dat we met een los back-end en front-end team werkte wat ook even wennen was. Ik ben erg blij met het product wat we hebben gebouwd al waren er zeker nog dingen die we toe hadden willen voegen."
     },
     "advoGodot": {
-      "details1": "",
-      "details2": ""
+      "details1": "Dit is een Work in Progress project. Ik ben bezig met mijn eigen game idee uit te werken in Godot. De naam komt van het concept dat je blokjes kan plaatsen en weggummen. Hierdoor wil ik ervoor zorgen dat het een soort puzzel platformer word.",
+      "details2": "Ik ben begonnen met de aspecten die ik in de opdracht voor school had gemaakt opnieuw te maken in Godot. Denk aan de movements en een eerste leveltje maken."
     }
   },
   "ui": {

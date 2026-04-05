@@ -30,7 +30,7 @@
       "discordInfo": "This is a work in progress project. I am making my own discord bot to give twitch and youtube alerts in a server.",
       "trippieInfo": "For this project we needed to make something to make traveling with train easer for someone with a intellectual disability. We sort of made a easier version of the NS app.",
       "stageInfo": "For this project we needed to make a platform for students. On this platform students got matched with internships with a matchscore made with a AI.",
-      "advoGodotInfo": ""
+      "advoGodotInfo": "This is a work in progress project. I am making my own game in Godot. Its gonna be a sort of puzzle platformer."
     },
     "advo": {
       "details1": "This was a project for school. We needed to make our first game. I needed to use Excalibur for this, because that works with Javascript. This was my fist experience with OOP programming.",
@@ -62,8 +62,8 @@
       "details2": "During this project I learned a lot of new things. We made the choose to work with typescript, but also with Tanstack router/form/query, Zod and some other new things. This took some time getting used to, but I learned a lot during this project. This also was the first time we worked with a split back-end and front-end team so that als took some time to get used to. I am very happy with the end result we build, but we also had a lot of things we wanted to add."
     },
     "advoGodot": {
-      "details1": "",
-      "details2": ""
+      "details1": "This is a Work in Progress project. I am working on my own game in Godot. The name comes from the concept that you can place and erase blocks. And with these mechanics I want to make it a sort of puzzle platformer.",
+      "details2": "I started with making the things I made for the assignment for school again in Godot. Things like the movements and a first level."
     }
   },
   "ui": {

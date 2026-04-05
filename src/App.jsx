@@ -12,6 +12,7 @@ import Discordbot from "./pages/detailpages/Discordbot.jsx";
 import Error from "./pages/Error.jsx";
 import Stagelink from "./pages/detailpages/Stagelink.jsx";
 import Trippie from "./pages/detailpages/Trippie.jsx";
+import AdvoGodot from "./pages/detailpages/AdvoGodot.jsx";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
                     <Route path="/projects/5" element={<Discordbot/>}/>
                     <Route path="/projects/6" element={<Trippie/>}/>
                     <Route path="/projects/7" element={<Stagelink/>}/>
+                    <Route path="/projects/8" element={<AdvoGodot/>}/>
                     <Route path="/about-me" element={<About/>}/>
                     <Route path="*" element={<Error/>}/>
                 </Route>
