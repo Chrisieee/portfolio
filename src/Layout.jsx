@@ -9,9 +9,9 @@ function Layout() {
         <div className={"flex flex-col justify-between max-w-screen h-screen"}>
             <Header/>
 
-            <main className={"max-w-screen flex flex-col gap-2 my-2 flex-grow"}>
+            <main className={"max-w-screen flex flex-col gap-2 my-2 grow"}>
                 <AnimatePresence mode="wait">
-                    <motion.div key={location.pathname} className={"flex-grow"}
+                    <motion.div key={location.pathname} className={"grow"}
                                 transition={{type: "spring", stiffness: 100, damping: 20}}>
                         <Outlet/>
                     </motion.div>

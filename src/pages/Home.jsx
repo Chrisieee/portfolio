@@ -20,7 +20,7 @@ function Home() {
             className="mx-4 grid md:grid-cols-4 grid-cols-2 gap-4 h-full"
             variants={containerVariants} initial="hidden" animate="show">
             <motion.section variants={itemVariants}
-                            className=" shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-2 col-span-1 row-span-2 flex flex-col justify-center gap-2">
+                            className=" shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-2 col-span-1 row-span-2 flex flex-col justify-center gap-2        ">
                 <p className={"text-4xl"}><i className="fa-solid fa-quote-left"></i></p>
                 <H2>{t("home.quote")}</H2>
                 <p>{t("home.quoteInfo")}</p>

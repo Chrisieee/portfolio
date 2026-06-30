@@ -66,6 +66,10 @@ function StageLink() {
                             <td><i className="fa-regular fa-file-code"></i></td>
                             <td className={"w-8/9"}>Zod</td>
                         </tr>
+                        <tr>
+                            <td><i className="fa-brands fa-figma"></i></td>
+                            <td className={"w-8/9"}>Figma</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -75,10 +79,10 @@ function StageLink() {
                 </div>
             </motion.article>
 
-            <ProjectImg src={foto2} project={"stagelink"} classname={"object-center"}/>
-            <ProjectImg src={foto3} project={"stagelink"} classname={"object-center"}/>
-            <ProjectImg src={foto4} project={"stagelink"} classname={"object-center"}/>
-            <ProjectImg src={foto5} project={"stagelink"} classname={"object-center"}/>
+            <ProjectImg src={foto2} project={"stagelink"} className={"object-center"}/>
+            <ProjectImg src={foto3} project={"stagelink"} className={"object-center"}/>
+            <ProjectImg src={foto4} project={"stagelink"} className={"object-center"}/>
+            <ProjectImg src={foto5} project={"stagelink"} className={"object-center"}/>
         </motion.section>
     )
 }

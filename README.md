@@ -1,4 +1,4 @@
-# Develop Portfolio Christa
+# Development Portfolio Christa
 
 Dit is de repo voor mijn developer portfolio.
 [Hier](https://chrisieee-dev.nl) staat hij live.

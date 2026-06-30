@@ -66,8 +66,8 @@ function AdvoCard() {
                             alt="foto advocaderaser"/>
             </div>
             <div className={"flex justify-evenly pt-2"}>
+                <p className={"text-lg"}><i className="fa-solid fa-cube text-2xl"></i> Godot</p>
                 <p className={"text-lg"}><i className="fa-regular fa-file-code text-2xl"></i> C#</p>
-                <p className={"text-lg"}><i className="fa-regular fa-file-code text-2xl"></i> Godot</p>
             </div>
             <p className={"text-sm"}>{t("projects.main.advoGodotInfo")}</p>
             <div className={"flex-col flex gap-2"}>

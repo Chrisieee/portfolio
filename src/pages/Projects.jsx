@@ -6,7 +6,7 @@ import {
     GamereviewsCard,
     SignatuurCard,
     TrippieCard,
-    StagelinkCard
+    StagelinkCard, Signature2Card, BoarditCard
 } from "../components/schoolProjects.jsx";
 import {AdvoCard, AudioCard, DiscordbotCard} from "../components/funProjects.jsx";
 import {useEffect} from "react";
@@ -30,10 +30,10 @@ function Projects() {
                 className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-3 xl:col-span-4 sm:col-span-2 col-span-1 content-center text-center"}>
                 <H2>{t("projects.main.title")} fun</H2>
             </motion.section>
-            
+
             <DiscordbotCard/>
-            <AudioCard/>
             <AdvoCard/>
+            <AudioCard/>
 
             <motion.section
                 variants={itemVariants}
@@ -41,6 +41,8 @@ function Projects() {
                 <H2>{t("projects.main.title")} school</H2>
             </motion.section>
 
+            <BoarditCard/>
+            <Signature2Card/>
             <StagelinkCard/>
             <GamereviewsCard/>
             <SignatuurCard/>

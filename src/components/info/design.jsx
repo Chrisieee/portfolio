@@ -26,26 +26,6 @@ function Design() {
                 <td><i className="fa-solid fa-pen"></i></td>
                 <td className={"w-8/9"}>Adobe Premiere Pro</td>
             </tr>
-            <tr>
-                <td><i className="fa-solid fa-cube"></i></td>
-                <td className={"w-8/9"}>Autodesk Maya</td>
-            </tr>
-            <tr>
-                <td><i className="fa-solid fa-cube"></i></td>
-                <td className={"w-8/9"}>Blender</td>
-            </tr>
-            <tr>
-                <td><i className="fa-solid fa-cube"></i></td>
-                <td className={"w-8/9"}>Unity</td>
-            </tr>
-            <tr className={"text-gray-700"}>
-                <td><i className="fa-solid fa-cube"></i></td>
-                <td className={"w-8/9"}>{t("about.basic")} Unreal</td>
-            </tr>
-            <tr className={"text-gray-700"}>
-                <td><i className="fa-solid fa-cube"></i></td>
-                <td className={"w-8/9"}>{t("about.basic")} Godot</td>
-            </tr>
             </tbody>
         </table>
     )

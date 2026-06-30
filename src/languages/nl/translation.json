@@ -15,7 +15,7 @@
     "hobbyInfo": "In mijn vrije tijd vind ik het super leuk om creatief bezig te zijn. Ik ben altijd wel bezig met een projectje denk hierbij aan foto's maken, designen, video's maken of programmeer projectjes. Ik houd ervan om mooie dingen te maken en mezelf uit te dagen met verschillende dingen.",
     "internship": "Stage",
     "internshipInfo": "Op een stage zou ik mezelf willen uitdagen om dingen te proberen en maken die ik nog nooit heb gedaan. Graag wil ik ontdekken wat er allemaal mogelijk is op het gebied van programmeren. Ik heb een lichte voorkeur voor front-end, omdat ik de visuele feedback die je hierbij krijgt heel fijn vind. Maar ik vind het ook leuk om te ontdekken wat er nog meer is.",
-    "experience": "Stage",
+    "experience": "Ervaring",
     "basic": "Basis"
   },
   "projects": {
@@ -30,7 +30,9 @@
       "discordInfo": "Dit is een project waar ik nog mee bezig ben. Ik ben een eigen discord bot aan het bouwen voor onder andere twitch & youtube meldingen.",
       "trippieInfo": "Dit was een project waar we iets moesten maken waardoor reizen met het OV makkelijker werd voor iemand met een LVB. We hebben eigenlijk een versimpelde versie van de NS app gemaakt.",
       "stageInfo": "Dit was een project waar we een platform moesten maken voor studenten waarbij studenten aan stageopdrachten worden gekoppeld met een matchscore die gemaakt werd door een AI.",
-      "advoGodotInfo": "Dit is een project waar ik nog mee bezig ben. Ik ben bezig met mijn game idee uitwerken in Godot. Het word een soort puzzel platformer."
+      "advoGodotInfo": "Dit is een project waar ik nog mee bezig ben. Ik ben bezig met mijn game idee uitwerken in Godot. Het word een soort puzzel platformer.",
+      "sign2Info": "Dit was een project waar je een eigen vorm mocht kiezen om je groei te laten zien. Ik heb gekozen om een puzzel game te maken waarbij je de stukjes kon omdraaien om informatie te lezen.",
+      "boarditInfo": "Dit was een project waarbij we een innovatie moesten verzinnen voor een probleem wat we uit onderzoek vonden. Wij wouden het stukje uitstel gedrag verhelpen bij eerstejaars studenten met ADHD."
     },
     "advo": {
       "details1": "Dit was een school project waar we voor het eerst een game hebben gemaakt. Ik heb hier Excalibur voor moeten gebruiken, omdat dit met Javascript werkt. Ook was dit de eerste ervaring met OOP programmeren.",
@@ -64,6 +66,14 @@
     "advoGodot": {
       "details1": "Dit is een Work in Progress project. Ik ben bezig met mijn eigen game idee uit te werken in Godot. De naam komt van het concept dat je blokjes kan plaatsen en weggummen. Hierdoor wil ik ervoor zorgen dat het een soort puzzel platformer word.",
       "details2": "Ik ben begonnen met de aspecten die ik in de opdracht voor school had gemaakt opnieuw te maken in Godot. Denk aan de movements en een eerste leveltje maken."
+    },
+    "sign2": {
+      "details1": "Voor dit project moesten iets maken waarbij we onze groei aantoonde die we hadden doormaakt in het afgelopen halfjaar. Hiervoor waren we vrij om een vorm te kiezen en mij leek het een leuke uitdaging om een game te maken. Aangezien ik al wat meer ervaring had opgedaan met Godot wou ik hier mee werken en dit zorgde er ook voor dat ik meer ervaring kon krijgen met Godot en C#.",
+      "details2": "Ik ben erg blij met hoe de game is geworden. Zelf denk ik dat het een vermakelijke game is die ook mijn groei goed over brengt. Dit is mijn eerste game project in Godot en C# en ik heb daarom veel geleerd van dit project!"
+    },
+    "boardit": {
+      "details1": "Dit was een project waar we in groepjes een product bij een probleem moesten bouwen. Onze groep is aan de slag gegaan met de doelgroep van eerstejaars studenten met ADHD en dan op het gebied van uitstel gedrag. We proberen dit te verminderen door het opdelen van taken, samen studeren en progressie visueel maken. Ik heb zelf vooral front-end gedaan, maar ook wel een deel back-end. Ik heb aan de pagina's die hier staan gewerkt.",
+      "details2": "Tijdens dit project heb ik voor het eerst een heel componenten systeem opgezet voor het team en hier heb ik veel van geleerd. Ook was dit de eerste keer dat ik een mono repo heb proberen live te zetten en dit was zeker lastig, maar ben erg blij dat het me uiteindelijk gelukt is."
     }
   },
   "ui": {

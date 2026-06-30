@@ -12,6 +12,7 @@ import {CvButton} from "../components/button.jsx";
 import {useEffect} from "react";
 import {useLanguage} from "../context/Language.jsx";
 import {useTranslation} from "react-i18next";
+import Game from "../components/info/game.jsx";
 
 function About() {
     const {t} = useTranslation()
@@ -40,7 +41,7 @@ function About() {
             </motion.article>
 
             <motion.article variants={itemVariants}
-                            className={"shadow-lg rounded-2xl p-4 bg-blue-500 flex flex-col gap-1 justify-between md:row-span-3 col-span-2 md:col-span-1"}>
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-500 flex flex-col gap-1 justify-between md:row-span-2 col-span-2 md:col-span-1"}>
                 <H2>Contact</H2>
                 <CvButton/>
                 <div className={"flex gap-5 justify-center"}>
@@ -49,14 +50,14 @@ function About() {
             </motion.article>
 
             <motion.article variants={itemVariants}
-                            className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-4 col-span-2 content-center text-center"}>
-                <H2>{t("about.experience")}</H2>
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-300 flex flex-col gap-1 justify-between md:row-span-1 col-span-2 md:col-span-1"}>
+                <H3>Skills:</H3>
+                <Skills/>
             </motion.article>
 
             <motion.article variants={itemVariants}
-                            className={"shadow-lg rounded-2xl p-4 bg-blue-300 flex flex-col gap-3 row-span-2"}>
-                <H3>Skills:</H3>
-                <Skills/>
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-400 md:col-span-4 col-span-2 content-center text-center"}>
+                <H2>{t("about.experience")}</H2>
             </motion.article>
 
             <motion.article variants={itemVariants}
@@ -83,6 +84,12 @@ function About() {
                     <H3 className={"pb-2"}>Database:</H3>
                     <Database/>
                 </div>
+            </motion.article>
+            
+            <motion.article variants={itemVariants}
+                            className={"shadow-lg rounded-2xl p-4 bg-blue-300 flex flex-col gap-3 row-span-2"}>
+                <H3>Game:</H3>
+                <Game/>
             </motion.article>
         </motion.div>
     )

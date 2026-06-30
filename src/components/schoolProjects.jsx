@@ -2,9 +2,11 @@ import {H3} from "./headings.jsx";
 import {motion} from "framer-motion";
 import advocaderaser from "../images/Advocaderaser.png";
 import signatuur from "../images/Signatuur.png";
+import signatuur2 from "../images/Signatuur2.png";
 import gamereview from "../images/Gamereviews.png";
 import trippie from "../images/Trippie.png";
 import stagelink from "../images/StageLink.png";
+import boardit from "../images/boardit.png";
 import {GitButton, InfoButton, LiveButton, ShowcaseButton} from "./button.jsx";
 import ProjectCard from "./projectCard.jsx";
 import {useTranslation} from "react-i18next";
@@ -137,4 +139,53 @@ function StagelinkCard() {
     )
 }
 
-export {AdvocaderaserCard, SignatuurCard, GamereviewsCard, TrippieCard, StagelinkCard}
+function Signature2Card() {
+    const {t} = useTranslation()
+    return (
+        <ProjectCard layoutId="project-9">
+            <div>
+                <H3 className={"pb-2"}>{t("projects.main.signTitle")} (solo)</H3>
+                <p>05-06-2026 - 19-06-2026</p>
+                <motion.img layoutId="project-9-image"
+                            className={"object-cover object-center rounded-xl w-full h-50 border-2"}
+                            src={signatuur2} alt="foto puzzel game"/>
+            </div>
+            <div className={"flex justify-evenly pt-2"}>
+                <p className={"text-lg"}><i className="fa-solid fa-cube text-2xl"></i> Godot</p>
+                <p className={"text-lg"}><i className="fa-regular fa-file-code text-2xl"></i> C#</p>
+            </div>
+            <p className={"text-sm"}>{t("projects.main.sign2Info")}</p>
+            <div className={"flex-col flex gap-2"}>
+                <InfoButton link={"/projects/9"}/>
+                <LiveButton link="https://chrisieeee.itch.io/signatuur-tle4"/>
+            </div>
+        </ProjectCard>
+    )
+}
+
+function BoarditCard() {
+    const {t} = useTranslation()
+    return (
+        <ProjectCard layoutId="project-10">
+            <div>
+                <H3 className={"pb-2"}>Board-it (team)</H3>
+                <p>01-06-2026 - 26-06-2026</p>
+                <motion.img layoutId="project-10-image"
+                            className={"object-cover object-center rounded-xl w-full h-50 border-2"}
+                            src={boardit} alt="foto stagelink"/>
+            </div>
+            <div className={"flex justify-evenly pt-2"}>
+                <p className={"text-lg"}><i className="fa-brands fa-react text-2xl"></i> React</p>
+                <p className={"text-lg"}><i className="fa-brands fa-laravel text-2xl"></i> Laravel</p>
+                <p className={"text-lg"}><i className="fa-regular fa-file-code text-2xl"></i> Tailwind CSS</p>
+            </div>
+            <p className={"text-sm"}>{t("projects.main.boarditInfo")}</p>
+            <div className={"flex-col flex gap-2"}>
+                <InfoButton link={"/projects/10"}/>
+                <ShowcaseButton link="https://cmgt.hr.nl/projecten/stage-link"/>
+            </div>
+        </ProjectCard>
+    )
+}
+
+export {AdvocaderaserCard, SignatuurCard, GamereviewsCard, TrippieCard, StagelinkCard, BoarditCard, Signature2Card}

@@ -10,7 +10,7 @@
   },
   "about": {
     "bioTitle": "Who is Christa",
-    "bio": "I am Christa, 25 years old and I studie Creatieve Media & Game Technologies. The thing I love the most is the fact I can create my creative ideas and bring them to life with programing. Programming contains a lot of logical thinking and I love to look and the end result and think I did this. With every project I try to reinvent myself and try new things.",
+    "bio": "I am Christa, 25 years old and I study Creatieve Media & Game Technologies. The thing I love the most is the fact I can create my creative ideas and bring them to life with programing. Programming contains a lot of logical thinking and I love to look and the end result and think I did this. With every project I try to reinvent myself and try new things.",
     "hobby": "Spare time",
     "hobbyInfo": "In my spare time I enjoy being creative. I am always working on a project think of making photos. designing, creating videos or programming projects. I love to create nice things and challenging myself with different things.",
     "internship": "Internship",
@@ -30,7 +30,9 @@
       "discordInfo": "This is a work in progress project. I am making my own discord bot to give twitch and youtube alerts in a server.",
       "trippieInfo": "For this project we needed to make something to make traveling with train easer for someone with a intellectual disability. We sort of made a easier version of the NS app.",
       "stageInfo": "For this project we needed to make a platform for students. On this platform students got matched with internships with a matchscore made with a AI.",
-      "advoGodotInfo": "This is a work in progress project. I am making my own game in Godot. Its gonna be a sort of puzzle platformer."
+      "advoGodotInfo": "This is a work in progress project. I am making my own game in Godot. Its gonna be a sort of puzzle platformer.",
+      "sign2Info": "We had the change to choice our own methode to show our grow. I choose to make a puzzle game were you can flip the pieces for this project.",
+      "boarditInfo": "For this project we needed to create something innovative. We made a app to make starting a task easier for students with ADHD."
     },
     "advo": {
       "details1": "This was a project for school. We needed to make our first game. I needed to use Excalibur for this, because that works with Javascript. This was my fist experience with OOP programming.",
@@ -58,12 +60,20 @@
       "details2": "During this project I mostly focused on making the overview page where the different traveling options are shown and the detailed view. I made sure that there wouldn't be to much information shown at ones. For example all the stations the train will stop are not visible at the start, but you can click to view them all. With this project I learned a lot of new things for example I worked with the NS api to get all the information. I also used the google api for the pictures of the stations."
     },
     "stage": {
-      "details1": "This was a project where we worked in groups with a case. Our group where given a case where we needed to create a platform where we linked students to internship assignments with a AI algorithm. We where split in a back-end team and a front-end team. I was part of the front-end team and made the pages standing on this page.",
+      "details1": "This was a project where we worked in groups on a case. Our group where given a case where we needed to create a platform where we linked students to internship assignments with a AI algorithm. We where split in a back-end team and a front-end team. I was part of the front-end team and made the pages standing on this page.",
       "details2": "During this project I learned a lot of new things. We made the choose to work with typescript, but also with Tanstack router/form/query, Zod and some other new things. This took some time getting used to, but I learned a lot during this project. This also was the first time we worked with a split back-end and front-end team so that als took some time to get used to. I am very happy with the end result we build, but we also had a lot of things we wanted to add."
     },
     "advoGodot": {
       "details1": "This is a Work in Progress project. I am working on my own game in Godot. The name comes from the concept that you can place and erase blocks. And with these mechanics I want to make it a sort of puzzle platformer.",
       "details2": "I started with making the things I made for the assignment for school again in Godot. Things like the movements and a first level."
+    },
+    "sign2": {
+      "details1": "I needed to make something that show the grow I made in the last semester. We were free to choose our own methode to show this and I chose to make a game for this, because I thought that would be a fun challenge. Because I was learning Godot and C# I wanted to get more experience with.",
+      "details2": "I am very happy about how the game turned out. I think I made a pretty enjoyable game that shows my grow in a good way. This was my first full Godot project with C# so I learned a lot from it!"
+    },
+    "boardit": {
+      "details1": "This was a project where we worked in groups to make a solution for a problem. We choose to go with first year students with ADHD and the problem was procrastination. We are trying to solve this problem with taking apart tasks, studing together and making progress visual. I mostly did front-end but also did some back-end. I made the pages here.",
+      "details2": "During this project I made a entire component library for the group and learned a lot from doing that. This also was the first time I tried to place a mono repo online and it took some time but I am very happy it worked out."
     }
   },
   "ui": {
