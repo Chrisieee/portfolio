@@ -6,11 +6,11 @@
     "contact1": "Questions?",
     "contact2": "Please contact me:",
     "bioTitle": "Who is Christa",
-    "bio": "I am Christa, 25 years old and I studie Creatieve Media & Game Technologies. The thing I love the most is the fact I can create my creative ideas and bring them to life with programing. Programming contains a lot of logical thinking and I love to look and the end result and think I did this. With every project I try to reinvent myself and try new things."
+    "bio": "I am Christa, 26 years old and I studie Creatieve Media & Game Technologies. The thing I love the most is the fact I can create my creative ideas and bring them to life with programing. Programming contains a lot of logical thinking and I love to look and the end result and think I did this. With every project I try to reinvent myself and try new things."
   },
   "about": {
     "bioTitle": "Who is Christa",
-    "bio": "I am Christa, 25 years old and I study Creatieve Media & Game Technologies. The thing I love the most is the fact I can create my creative ideas and bring them to life with programing. Programming contains a lot of logical thinking and I love to look and the end result and think I did this. With every project I try to reinvent myself and try new things.",
+    "bio": "I am Christa, 26 years old and I study Creatieve Media & Game Technologies. The thing I love the most is the fact I can create my creative ideas and bring them to life with programing. Programming contains a lot of logical thinking and I love to look and the end result and think I did this. With every project I try to reinvent myself and try new things.",
     "hobby": "Spare time",
     "hobbyInfo": "In my spare time I enjoy being creative. I am always working on a project think of making photos. designing, creating videos or programming projects. I love to create nice things and challenging myself with different things.",
     "internship": "Internship",
@@ -32,7 +32,10 @@
       "stageInfo": "For this project we needed to make a platform for students. On this platform students got matched with internships with a matchscore made with a AI.",
       "advoGodotInfo": "This is a work in progress project. I am making my own game in Godot. Its gonna be a sort of puzzle platformer.",
       "sign2Info": "We had the change to choice our own methode to show our grow. I choose to make a puzzle game were you can flip the pieces for this project.",
-      "boarditInfo": "For this project we needed to create something innovative. We made a app to make starting a task easier for students with ADHD."
+      "boarditInfo": "For this project we needed to create something innovative. We made a app to make starting a task easier for students with ADHD.",
+      "behindSlotsInfo": "",
+      "pictureItInfo": "",
+      "leaveItInfo": ""
     },
     "advo": {
       "details1": "This was a project for school. We needed to make our first game. I needed to use Excalibur for this, because that works with Javascript. This was my fist experience with OOP programming.",
@@ -65,7 +68,8 @@
     },
     "advoGodot": {
       "details1": "This is a Work in Progress project. I am working on my own game in Godot. The name comes from the concept that you can place and erase blocks. And with these mechanics I want to make it a sort of puzzle platformer.",
-      "details2": "I started with making the things I made for the assignment for school again in Godot. Things like the movements and a first level."
+      "details2": "I started with making the things I made for the assignment for school (see orginal project) again in Godot. Things like the movements and a first level.",
+      "button": "Original project"
     },
     "sign2": {
       "details1": "I needed to make something that show the grow I made in the last semester. We were free to choose our own methode to show this and I chose to make a game for this, because I thought that would be a fun challenge. Because I was learning Godot and C# I wanted to get more experience with.",

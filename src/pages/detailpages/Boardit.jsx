@@ -62,7 +62,7 @@ function Boardit() {
                     </table>
                 </div>
                 <div className={"flex flex-col gap-2 text-center"}>
-                    <ShowcaseButton link={"https://project.cmi.hr.nl/2024_2025/cle3_t10/trippie/"}/>
+                    <ShowcaseButton link={"https://cmgt.hr.nl/projecten/Board-it"}/>
                     <GitButton link={"https://github.com/dingoskye/tle8-startup"}> Github</GitButton>
                 </div>
             </motion.article>

@@ -8,7 +8,7 @@ import {
     TrippieCard,
     StagelinkCard, Signature2Card, BoarditCard
 } from "../components/schoolProjects.jsx";
-import {AdvoCard, AudioCard, DiscordbotCard} from "../components/funProjects.jsx";
+import {AdvoCard, AudioCard, DiscordbotCard, LeaveCard, PictureCard, SlotsCard} from "../components/funProjects.jsx";
 import {useEffect} from "react";
 import {useLanguage} from "../context/Language.jsx";
 import {useTranslation} from "react-i18next";
@@ -33,6 +33,9 @@ function Projects() {
 
             <DiscordbotCard/>
             <AdvoCard/>
+            <LeaveCard/>
+            <PictureCard/>
+            <SlotsCard/>
             <AudioCard/>
 
             <motion.section
@@ -47,7 +50,6 @@ function Projects() {
             <GamereviewsCard/>
             <SignatuurCard/>
             <TrippieCard/>
-            <AdvocaderaserCard/>
         </motion.div>
     )
 }

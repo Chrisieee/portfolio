@@ -16,7 +16,7 @@ function Game() {
             </tr>
             <tr>
                 <td><i className="fa-regular fa-file-code"></i></td>
-                <td className={"w-8/9"}>Excalibur Game engine</td>
+                <td className={"w-8/9"}>Excalibur Engine</td>
             </tr>
             <tr>
                 <td><i className="fa-solid fa-cube"></i></td>
@@ -28,15 +28,15 @@ function Game() {
             </tr>
             <tr className={"text-gray-700"}>
                 <td><i className="fa-solid fa-cube"></i></td>
-                <td className={"w-8/9"}>{t("about.basic")} Unreal</td>
+                <td className={"w-8/9"}>{t("about.basic")} Unreal Engine</td>
             </tr>
-            <tr className={"text-gray-700"}>
+            <tr>
                 <td><i className="fa-regular fa-file-code"></i></td>
-                <td className={"w-8/9"}>{t("about.basic")} C#</td>
+                <td className={"w-8/9"}>C#</td>
             </tr>
-            <tr className={"text-gray-700"}>
+            <tr>
                 <td><i className="fa-regular fa-file-code"></i></td>
-                <td className={"w-8/9"}>{t("about.basic")} GDScript</td>
+                <td className={"w-8/9"}>GDScript</td>
             </tr>
             </tbody>
         </table>

@@ -6,11 +6,11 @@
     "contact1": "Vragen?",
     "contact2": "Neem contact op:",
     "bioTitle": "Wie is Christa",
-    "bio": "Ik ben Christa, 25 jaar oud en ik studeer Creatieve Media & Game Technologies. Het leukste vind ik het kunnen uitwerken van de creatieve ideeën die ik heb in iets wat technisch ook werkt. Programmeren is grotendeels logisch nadenken en ik vind het erg leuk om uiteindelijk het eind resultaat te kunnen bekijken en te bedenken dat het me gewoon gelukt is. Met elk project probeer ik nieuwe dingen uit en ontdek ik mezelf verder."
+    "bio": "Ik ben Christa, 26 jaar oud en ik studeer Creatieve Media & Game Technologies. Het leukste vind ik het kunnen uitwerken van de creatieve ideeën die ik heb in iets wat technisch ook werkt. Programmeren is grotendeels logisch nadenken en ik vind het erg leuk om uiteindelijk het eind resultaat te kunnen bekijken en te bedenken dat het me gewoon gelukt is. Met elk project probeer ik nieuwe dingen uit en ontdek ik mezelf verder."
   },
   "about": {
     "bioTitle": "Wie is Christa",
-    "bio": "Ik ben Christa, 25 jaar oud en ik studeer Creatieve Media & Game Technologies. Het leukste vind ik het kunnen uitwerken van de creatieve ideeën die ik heb in iets wat technisch ook werkt. Programmeren is grotendeels logisch nadenken en ik vind het erg leuk om uiteindelijk het eind resultaat te kunnen bekijken en te bedenken dat het me gewoon gelukt is. Met elk project probeer ik nieuwe dingen uit en ontdek ik mezelf verder.",
+    "bio": "Ik ben Christa, 26 jaar oud en ik studeer Creatieve Media & Game Technologies. Het leukste vind ik het kunnen uitwerken van de creatieve ideeën die ik heb in iets wat technisch ook werkt. Programmeren is grotendeels logisch nadenken en ik vind het erg leuk om uiteindelijk het eind resultaat te kunnen bekijken en te bedenken dat het me gewoon gelukt is. Met elk project probeer ik nieuwe dingen uit en ontdek ik mezelf verder.",
     "hobby": "Vrije tijd",
     "hobbyInfo": "In mijn vrije tijd vind ik het super leuk om creatief bezig te zijn. Ik ben altijd wel bezig met een projectje denk hierbij aan foto's maken, designen, video's maken of programmeer projectjes. Ik houd ervan om mooie dingen te maken en mezelf uit te dagen met verschillende dingen.",
     "internship": "Stage",
@@ -32,7 +32,10 @@
       "stageInfo": "Dit was een project waar we een platform moesten maken voor studenten waarbij studenten aan stageopdrachten worden gekoppeld met een matchscore die gemaakt werd door een AI.",
       "advoGodotInfo": "Dit is een project waar ik nog mee bezig ben. Ik ben bezig met mijn game idee uitwerken in Godot. Het word een soort puzzel platformer.",
       "sign2Info": "Dit was een project waar je een eigen vorm mocht kiezen om je groei te laten zien. Ik heb gekozen om een puzzel game te maken waarbij je de stukjes kon omdraaien om informatie te lezen.",
-      "boarditInfo": "Dit was een project waarbij we een innovatie moesten verzinnen voor een probleem wat we uit onderzoek vonden. Wij wouden het stukje uitstel gedrag verhelpen bij eerstejaars studenten met ADHD."
+      "boarditInfo": "Dit was een project waarbij we een innovatie moesten verzinnen voor een probleem wat we uit onderzoek vonden. Wij wouden het stukje uitstel gedrag verhelpen bij eerstejaars studenten met ADHD.",
+      "behindSlotsInfo": "Ik besloot een game jam te doen en dit was de eerste die ik gedaan heb. Het thema was 'Spin to Win' en ik heb deze 2D game in 7 dagen gemaakt.",
+      "pictureItInfo": "Dit was de tweede game jam die ik gedaan heb in de vakantie. Hierbij was het thema Retro en heb ik deze 3D game gemaakt in 9 dagen tijd.",
+      "leaveItInfo": "Dit was een hele korte game jam in het weekend. Het thema was cozy en herfst en toen heb ik deze 2D game gemaakt in 3 dagen."
     },
     "advo": {
       "details1": "Dit was een school project waar we voor het eerst een game hebben gemaakt. Ik heb hier Excalibur voor moeten gebruiken, omdat dit met Javascript werkt. Ook was dit de eerste ervaring met OOP programmeren.",
@@ -65,7 +68,8 @@
     },
     "advoGodot": {
       "details1": "Dit is een Work in Progress project. Ik ben bezig met mijn eigen game idee uit te werken in Godot. De naam komt van het concept dat je blokjes kan plaatsen en weggummen. Hierdoor wil ik ervoor zorgen dat het een soort puzzel platformer word.",
-      "details2": "Ik ben begonnen met de aspecten die ik in de opdracht voor school had gemaakt opnieuw te maken in Godot. Denk aan de movements en een eerste leveltje maken."
+      "details2": "Ik ben begonnen met de aspecten die ik in de opdracht voor school (zie orginele project) had gemaakt opnieuw te maken in Godot. Denk aan de movements en een eerste leveltje maken.",
+      "button": "Orginele project"
     },
     "sign2": {
       "details1": "Voor dit project moesten iets maken waarbij we onze groei aantoonde die we hadden doormaakt in het afgelopen halfjaar. Hiervoor waren we vrij om een vorm te kiezen en mij leek het een leuke uitdaging om een game te maken. Aangezien ik al wat meer ervaring had opgedaan met Godot wou ik hier mee werken en dit zorgde er ook voor dat ik meer ervaring kon krijgen met Godot en C#.",

@@ -182,7 +182,7 @@ function BoarditCard() {
             <p className={"text-sm"}>{t("projects.main.boarditInfo")}</p>
             <div className={"flex-col flex gap-2"}>
                 <InfoButton link={"/projects/10"}/>
-                <ShowcaseButton link="https://cmgt.hr.nl/projecten/stage-link"/>
+                <ShowcaseButton link="https://cmgt.hr.nl/projecten/Board-it"/>
             </div>
         </ProjectCard>
     )

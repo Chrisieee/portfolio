@@ -1,7 +1,7 @@
 import foto from '../../images/Advo-godot.png'
 import {useAnimate} from "../../context/AnimationContext.jsx";
 import {motion} from "framer-motion";
-import {GitButton} from "../../components/button.jsx";
+import {Button, GitButton} from "../../components/button.jsx";
 import {useEffect} from "react";
 import {useTranslation} from "react-i18next";
 
@@ -51,6 +51,7 @@ function AdvoGodot() {
                     </table>
                 </div>
                 <div className={"flex flex-col gap-2 text-center"}>
+                    <Button link={"/projects/1"}>{t("projects.advoGodot.button")}</Button>
                     <GitButton link={"https://github.com/Chrisieee/advocaderaser-godot"}> Github</GitButton>
                 </div>
             </motion.article>

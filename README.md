@@ -7,7 +7,9 @@ Dit is de repo voor mijn developer portfolio.
 
 ### Los van website:
 
-- ?
+- Readme toevoegen bij Behind the slots
+- Readme toevoegen bij Picture it
+- Readme toevoegen bij Leave it
 
 ### Projecten:
 
@@ -18,10 +20,13 @@ Dit is de repo voor mijn developer portfolio.
 ### Moet voor website:
 
 - WCAG check
+- Detailpagina's voor game jam projecten
 
 #### Informatie:
 
-- ?
+- Text Behind the slots
+- Text Picture it
+- Voeg Leave it toe
 
 #### Design & Responsiveness:
 
